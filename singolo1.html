@@ -10,6 +10,7 @@
   <meta name="description" content="Singolo, web-design studio">
   <title>Singolo</title>
 </head>
+
 <body class="page">
   <h1 class="visually-hidden">singolo. we create design.</h1>
   <header class="header__main wrapper">
@@ -53,32 +54,23 @@
   </header>
 
   <main>
-    <section class="slider wrapper">
+    <section class="slider">
       <h2 class="visually-hidden">gallery of products</h2>
-      <div class="slider__gallery" role="region" aria-label="gallery" tabindex="0" aria-describedby="focus">
-        <ul>
-          <li class="slider__slide slider__slide_slide-1">
-            <img src="" alt="">
-            <img src="" alt="">
+        <ul class="slider__gallery">
+          <li class="slider__slide slider__slide_slide-1" aria-label="Illustration with two white Iphones on pink background">
+            <div class="iphone iphone_vertical"></div>
+            <div class="iphone iphone_horizontal"></div>
           </li>
         </ul>
-      </div>
-      <ul aria-label="Контролы галереи">
-        <li>
-          <button class="slider__control_previous" id="previous" aria-label="Предыдущий">
-            <svg aria-hidden="true" focusable="false">
-              <use xlink:href="#arrow-left"/>
-            </svg>
-          </button>
-        </li>
-        <li>
-          <button class="slider__control_next" id="next" aria-label="Следующий">
-            <svg aria-hidden="true" focusable="false">
-              <use xlink:href="#arrow-right"/>
-            </svg>
-          </button>
-        </li>
-      </ul>
+
+        <ul class="controls__list" aria-label="Gallery controls">
+          <li>
+            <button class="control slider__control_previous" id="previous" aria-label="Previous"></button>
+          </li>
+          <li>
+            <button class="control slider__control_next" id="next" aria-label="Next"></button>
+          </li>
+        </ul>
     </section>
 
     <section class="services wrapper">
