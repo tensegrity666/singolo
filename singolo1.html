@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap"
-  rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="singolo1.css">
   <meta name="description" content="Singolo, web-design studio">
   <title>Singolo</title>
@@ -54,12 +55,33 @@
   <main>
     <section class="slider wrapper">
       <h2 class="visually-hidden">gallery of products</h2>
-      <div class="slider__control_backward"></div>
-      <div class="slider__slide"></div>
-      <div class="slider__control_forward"></div>
+      <div class="slider__gallery" role="region" aria-label="gallery" tabindex="0" aria-describedby="focus">
+        <ul>
+          <li class="slider__slide slider__slide_slide-1">
+            <img src="" alt="">
+            <img src="" alt="">
+          </li>
+        </ul>
+      </div>
+      <ul aria-label="Контролы галереи">
+        <li>
+          <button class="slider__control_previous" id="previous" aria-label="Предыдущий">
+            <svg aria-hidden="true" focusable="false">
+              <use xlink:href="#arrow-left"/>
+            </svg>
+          </button>
+        </li>
+        <li>
+          <button class="slider__control_next" id="next" aria-label="Следующий">
+            <svg aria-hidden="true" focusable="false">
+              <use xlink:href="#arrow-right"/>
+            </svg>
+          </button>
+        </li>
+      </ul>
     </section>
 
-    <section class="services">
+    <section class="services wrapper">
       <h2 class="services__title">our services</h2>
       <p class="services__paragraph">
         Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis,
@@ -67,42 +89,42 @@
         Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.
       </p>
       <ul class="services__list">
-        <li class="services__item">
+        <li class="services__item services__item_design">
           <b class="services__item-title">custom design</b>
           <p class="services__item-paragraph">
             Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet,
             viverra lacus ut, ultrices velit.
           </p>
         </li>
-        <li class="services__item">
+        <li class="services__item services__item_ideas">
           <b class="services__item-title">innovative ideas</b>
           <p class="services__item-paragraph">
             Quisque luctus, quam eget molestie commodo, lacus purus cursus purus, nec rutrum
             tellus dolor id lorem.
           </p>
         </li>
-        <li class="services__item">
+        <li class="services__item services__item_love">
           <b class="services__item-title">love is the answer</b>
           <p class="services__item-paragraph">
             Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat
             felis. Quisque condimentum.
           </p>
         </li>
-        <li class="services__item">
+        <li class="services__item services__item_responsive">
           <b class="services__item-title">responsive layout</b>
           <p class="services__item-paragraph">
             Sed porttitor placerat rhoncus. In at nunc tellus. Maecenas blandit nunc ligula.
             Praesent elit leo.
           </p>
         </li>
-        <li class="services__item">
+        <li class="services__item services__item_support">
           <b class="services__item-title">24/7 support</b>
           <p class="services__item-paragraph">
             Vivamus vel quam lacinia, tincidunt dui non, vehicula nisi. Nulla a sem erat.
             Pellentesque egestas venenatis lorem .
           </p>
         </li>
-        <li class="services__item">
+        <li class="services__item services__item_feeling">
           <b class="services__item-title">feel like a star</b>
           <p class="services__item-paragraph">
             Quisque luctus, quam eget molestie commodo, lacus purus cursus purus, nec rutrum
