@@ -251,7 +251,6 @@ input[type="radio"].visually-hidden {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  min-width: 70%;
 }
 
 .navigation-main__list {
@@ -278,8 +277,10 @@ input[type="radio"].visually-hidden {
   font-weight: 700;
 }
 
+.navigation-main__item:last-child,
 .navigation-main__item:last-child::after {
   content: "";
+  padding-right: 0;
 }
 
 .navigation-main__item-link {
@@ -339,6 +340,7 @@ input[type="radio"].visually-hidden {
 
 .slider__control_previous {
   background-image: url("/assets/chev.png");
+  background-position: 40px 281px;
 }
 
 .slider__control_previous:focus,
@@ -355,6 +357,7 @@ input[type="radio"].visually-hidden {
 
 .slider__control_next {
   background-image: url("/assets/chev.png");
+  background-position: 42px 292px;
   transform: rotate(180deg);
 }
 
@@ -372,8 +375,8 @@ input[type="radio"].visually-hidden {
 
 .iphone {
   position: absolute;
-  width: 215px;
-  height: 458px;
+  width: 218px;
+  height: 460px;
   background-image: url("/assets/iphone/iPhone_Vertical.svg");
   background-repeat: no-repeat;
   z-index: 1;
@@ -381,7 +384,7 @@ input[type="radio"].visually-hidden {
 
 .iphone_vertical {
   top: 53px;
-  left: 112px;
+  left: 111px;
 }
 
 .iphone_vertical::after {
@@ -389,17 +392,17 @@ input[type="radio"].visually-hidden {
   content: "";
   background-image: url("/assets/Layer_6.png");
   display: block;
-  top: 55px;
-  left: 10px;
-  width: 188px;
-  height: 333px;
-  border: 2px solid gray;
-  border-radius: 5px;
+  top: 62px;
+  left: 12px;
+  width: 189px;
+  height: 334px;
+  border: 2px solid #c2c1c1;
+  border-radius: 3px;
 }
 
 .iphone_horizontal {
-  top: 53px;
-  right: 260px;
+  top: 52px;
+  right: 261px;
   transform: rotate(90deg);
 }
 
@@ -408,13 +411,13 @@ input[type="radio"].visually-hidden {
   content: "";
   background-image: url("/assets/Layer_5.png");
   display: block;
-  top: 130px;
-  right: -60px;
-  width: 333px;
-  height: 188px;
+  top: 134px;
+  right: -61px;
+  width: 334px;
+  height: 189px;
   transform: rotate(-90deg);
-  border: 2px solid gray;
-  border-radius: 5px;
+  border: 2px solid #c2c1c1;
+  border-radius: 3px;
 }
 
 .slider__slide_slide-1::before {
@@ -423,7 +426,7 @@ input[type="radio"].visually-hidden {
   position: absolute;
   width: 240px;
   height: 483px;
-  top: 55px;
+  top: 53px;
   right: 235px;
   background-image: url("/assets/iphone/Shadow.png");
   transform: rotate(90deg) scale(1, -1);
@@ -435,8 +438,8 @@ input[type="radio"].visually-hidden {
   position: absolute;
   width: 240px;
   height: 483px;
-  top: 55px;
-  left: 125px;
+  top: 54px;
+  left: 111px;
   background-image: url("/assets/iphone/Shadow.png");
 }
 
@@ -445,14 +448,14 @@ input[type="radio"].visually-hidden {
   min-height: 500px;
   background-color: #f2f2f2;
   color: #767e9e;
-  padding-top: 6.7rem;
+  padding-top: 4.7rem;
   padding-bottom: 3.2rem;
   box-shadow: inset 0px -6px 0px 0px #ffffff;
 }
 
 .services__title {
   margin: 0;
-  margin-bottom: 3rem;
+  margin-bottom: 0.7rem;
   color: #666d89;
   font-size: 3rem;
   font-weight: 900;
@@ -466,7 +469,7 @@ input[type="radio"].visually-hidden {
   line-height: 3rem;
   text-align: justify;
   margin: 0;
-  margin-bottom: 5rem;
+  margin-bottom: 4.5rem;
 }
 
 .services__list {
@@ -480,9 +483,9 @@ input[type="radio"].visually-hidden {
 .services__item {
   position: relative;
   width: 220px;
-  min-height: 90px;
+  min-height: 100px;
   padding-left: 8rem;
-  margin-bottom: 3.5rem;
+  margin-bottom: 2rem;
   list-style: none;
 }
 
@@ -490,8 +493,8 @@ input[type="radio"].visually-hidden {
   content: "";
   position: absolute;
   display: block;
-  width: 59px;
-  height: 59px;
+  width: 55px;
+  height: 55px;
   top: 0;
   left: 0;
   border: 2px solid #666d89;
@@ -528,8 +531,8 @@ input[type="radio"].visually-hidden {
   color: #666d89;
   font-size: 1.8rem;
   font-weight: 900;
-  line-height: 2rem;
-  margin-bottom: 1.5rem;
+  line-height: .1rem;
+  margin-bottom: 3rem;
   text-transform: capitalize;
 }
 
@@ -538,6 +541,6 @@ input[type="radio"].visually-hidden {
   font-size: 1.2rem;
   font-weight: 400;
   line-height: 2rem;
-  margin: 0;
+  /* margin: 0; */
   text-align: justify;
 }
