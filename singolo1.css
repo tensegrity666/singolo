@@ -237,8 +237,13 @@ input[type="radio"].visually-hidden {
   transition: all 0.2s linear;
 }
 
+.link:not([href]), .link:not([href]):hover {
+  color: #f06c64;
+}
+
 .logo__item-link {
-  font-size: 2.5rem;
+  font-size: 2.41rem;
+  line-height: 1.7rem;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -255,7 +260,6 @@ input[type="radio"].visually-hidden {
 
 .navigation-main__list {
   display: flex;
-  align-items: center;
   justify-content: space-between;
   min-width: 371px;
   margin: 0;
@@ -265,16 +269,19 @@ input[type="radio"].visually-hidden {
 .navigation-main__item {
   position: relative;
   list-style: none;
-  padding-right: 3rem;
+  padding-right: 2.8rem;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 4rem;
 }
 
 .navigation-main__item::after {
   content: "\00B7";
   position: absolute;
-  top: 0;
-  right: 1.4rem;
+  top: 0.2rem;
+  right: 1.1rem;
   color: #494e62;
-  font-weight: 700;
+  font-weight: 300;
 }
 
 .navigation-main__item:last-child,
@@ -340,7 +347,7 @@ input[type="radio"].visually-hidden {
 
 .slider__control_previous {
   background-image: url("/assets/chev.png");
-  background-position: 40px 281px;
+  background-position: 41px 281px;
 }
 
 .slider__control_previous:focus,
@@ -357,7 +364,7 @@ input[type="radio"].visually-hidden {
 
 .slider__control_next {
   background-image: url("/assets/chev.png");
-  background-position: 42px 292px;
+  background-position: 40px 292px;
   transform: rotate(180deg);
 }
 
@@ -384,40 +391,42 @@ input[type="radio"].visually-hidden {
 
 .iphone_vertical {
   top: 53px;
-  left: 111px;
+  left: 112px;
 }
 
 .iphone_vertical::after {
   position: absolute;
   content: "";
-  background-image: url("/assets/Layer_6.png");
+  background-image: url("/assets/Layer_6.jpg");
   display: block;
   top: 62px;
-  left: 12px;
-  width: 189px;
-  height: 334px;
-  border: 2px solid #c2c1c1;
+  left: 11px;
+  width: 195px;
+  height: 339px;
+  border: 3px solid #c6c6c6;
   border-radius: 3px;
+  box-sizing: border-box;
 }
 
 .iphone_horizontal {
-  top: 52px;
-  right: 261px;
+  top: 53px;
+  right: 258px;
   transform: rotate(90deg);
 }
 
 .iphone_horizontal::after {
   position: absolute;
   content: "";
-  background-image: url("/assets/Layer_5.png");
+  background-image: url("/assets/Layer_5.jpg");
   display: block;
   top: 134px;
-  right: -61px;
-  width: 334px;
-  height: 189px;
+  right: -60px;
+  width: 339px;
+  height: 195px;
   transform: rotate(-90deg);
-  border: 2px solid #c2c1c1;
+  border: 3px solid #c6c6c6;
   border-radius: 3px;
+  box-sizing: border-box;
 }
 
 .slider__slide_slide-1::before {
@@ -467,7 +476,6 @@ input[type="radio"].visually-hidden {
   font-size: 1.8rem;
   font-weight: 300;
   line-height: 3rem;
-  text-align: justify;
   margin: 0;
   margin-bottom: 4.5rem;
 }
@@ -482,10 +490,10 @@ input[type="radio"].visually-hidden {
 
 .services__item {
   position: relative;
-  width: 220px;
+  width: 221px;
   min-height: 100px;
   padding-left: 8rem;
-  margin-bottom: 2rem;
+  margin-bottom: 2.3rem;
   list-style: none;
 }
 
@@ -495,8 +503,8 @@ input[type="radio"].visually-hidden {
   display: block;
   width: 55px;
   height: 55px;
-  top: 0;
-  left: 0;
+  top: 0.1rem;
+  left: 0.1rem;
   border: 2px solid #666d89;
   border-radius: 50%;
   background-position: center;
@@ -530,9 +538,10 @@ input[type="radio"].visually-hidden {
 .services__item-title {
   color: #666d89;
   font-size: 1.8rem;
-  font-weight: 900;
-  line-height: .1rem;
-  margin-bottom: 3rem;
+  font-weight: 700;
+  line-height: 1.6rem;
+  margin: 0;
+  margin-bottom: 1rem;
   text-transform: capitalize;
 }
 
@@ -540,6 +549,7 @@ input[type="radio"].visually-hidden {
   color: #767e9e;
   font-size: 1.2rem;
   font-weight: 400;
-  line-height: 2rem;
+  line-height: 2.2rem;
   text-align: justify;
+  margin: 0;
 }
