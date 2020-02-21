@@ -14,7 +14,8 @@ h1 {
 }
 
 hr {
-  box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
   height: 0;
   overflow: visible;
 }
@@ -112,7 +113,8 @@ fieldset {
 }
 
 legend {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   display: table;
   max-width: 100%;
   padding: 0;
@@ -130,7 +132,8 @@ textarea {
 
 [type="checkbox"],
 [type="radio"] {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0;
 }
 
@@ -184,7 +187,8 @@ input[type="radio"].visually-hidden {
 .page {
   width: 1020px;
   margin: 0 auto;
-  box-shadow: 0px 1px 3px 0px rgba(50,55,70,0.7);
+  -webkit-box-shadow: 0px 1px 3px 0px rgba(50,55,70,0.7);
+          box-shadow: 0px 1px 3px 0px rgba(50,55,70,0.7);
 }
 
 .page::-webkit-scrollbar {
@@ -199,25 +203,34 @@ input[type="radio"].visually-hidden {
   background-color: #2d303a;
   border-radius: 20px;
   outline: 1px solid #f06c64;
-  box-shadow: inset 0 0 10px #000000;
+  -webkit-box-shadow: inset 0 0 10px #000000;
+          box-shadow: inset 0 0 10px #000000;
 }
 
 
 .wrapper {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding-left: 4rem;
   padding-right: 4rem;
 }
 
 .header__main {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   position: relative;
   min-height: 95px;
   background-color: #2d303a;
   color: #ffffff;
-  box-shadow: inset 0px -6px 0px 0px #323746;
+  -webkit-box-shadow: inset 0px -6px 0px 0px #323746;
+          box-shadow: inset 0px -6px 0px 0px #323746;
 }
 
 
@@ -234,6 +247,8 @@ input[type="radio"].visually-hidden {
   color: #ffffff;
   text-decoration: none;
   cursor: pointer;
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
   transition: all 0.2s linear;
 }
 
@@ -253,14 +268,24 @@ input[type="radio"].visually-hidden {
 }
 
 .navigation-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .navigation-main__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   min-width: 371px;
   margin: 0;
   padding: 0;
@@ -299,17 +324,25 @@ input[type="radio"].visually-hidden {
 
 .navigation-main__item-link:hover {
   color: #f06c64;
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
   transition: all 0.2s linear;
 }
 
 .slider {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 100%;
   height: 600px;
   background-color: #f06c64;
-  box-shadow: inset 0px -6px 0px 0px  #ea676b;
+  -webkit-box-shadow: inset 0px -6px 0px 0px  #ea676b;
+          box-shadow: inset 0px -6px 0px 0px  #ea676b;
 }
 
 .slider__gallery {
@@ -320,26 +353,41 @@ input[type="radio"].visually-hidden {
 }
 
 .controls__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
 .control {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 100px;
   height: 600px;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background-color: transparent;
   padding: 0;
   border: none;
   background-position: center;
   background-repeat: no-repeat;
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
   transition: all 0.2s linear;
   cursor: pointer;
   outline: none;
@@ -353,31 +401,43 @@ input[type="radio"].visually-hidden {
 .slider__control_previous:focus,
 .slider__control_previous:hover {
   background-image: url("./assets/chev.png");
-  box-shadow: inset 10px 0px 20px -15px rgba(50, 55, 70, 0.7);
+  -webkit-box-shadow: inset 10px 0px 20px -15px rgba(50, 55, 70, 0.7);
+          box-shadow: inset 10px 0px 20px -15px rgba(50, 55, 70, 0.7);
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
   transition: all 0.2s linear;
-  filter: contrast(0.8);
+  -webkit-filter: contrast(0.8);
+          filter: contrast(0.8);
 }
 
 .slider__control_previous:active {
-  box-shadow: inset 10px 0px 20px -15px rgba(50, 55, 70, 1);
+  -webkit-box-shadow: inset 10px 0px 20px -15px rgba(50, 55, 70, 1);
+          box-shadow: inset 10px 0px 20px -15px rgba(50, 55, 70, 1);
 }
 
 .slider__control_next {
   background-image: url("./assets/chev.png");
   background-position: 40px 292px;
-  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 .slider__control_next:focus,
 .slider__control_next:hover {
   background-image: url("./assets/chev.png");
-  box-shadow: inset 10px 0px 20px -15px rgba(50, 55, 70, 1);
+  -webkit-box-shadow: inset 10px 0px 20px -15px rgba(50, 55, 70, 1);
+          box-shadow: inset 10px 0px 20px -15px rgba(50, 55, 70, 1);
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
   transition: all 0.2s linear;
-  filter: contrast(0.8);
+  -webkit-filter: contrast(0.8);
+          filter: contrast(0.8);
 }
 
 .slider__control_next:hover {
-  box-shadow: inset 10px 0px 20px -15px rgba(50, 55, 70, 0.8);
+  -webkit-box-shadow: inset 10px 0px 20px -15px rgba(50, 55, 70, 0.8);
+          box-shadow: inset 10px 0px 20px -15px rgba(50, 55, 70, 0.8);
 }
 
 .iphone {
@@ -405,13 +465,16 @@ input[type="radio"].visually-hidden {
   height: 339px;
   border: 3px solid #c6c6c6;
   border-radius: 3px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .iphone_horizontal {
   top: 53px;
   right: 258px;
-  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 
 .iphone_horizontal::after {
@@ -423,10 +486,13 @@ input[type="radio"].visually-hidden {
   right: -60px;
   width: 339px;
   height: 195px;
-  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+          transform: rotate(-90deg);
   border: 3px solid #c6c6c6;
   border-radius: 3px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .slider__slide_slide-1::before {
@@ -438,7 +504,9 @@ input[type="radio"].visually-hidden {
   top: 53px;
   right: 235px;
   background-image: url("./assets/iphone/Shadow.png");
-  transform: rotate(90deg) scale(1, -1);
+  -webkit-transform: rotate(90deg) scale(1, -1);
+      -ms-transform: rotate(90deg) scale(1, -1);
+          transform: rotate(90deg) scale(1, -1);
 }
 
 .slider__slide_slide-1::after {
@@ -459,7 +527,8 @@ input[type="radio"].visually-hidden {
   color: #767e9e;
   padding-top: 4.7rem;
   padding-bottom: 3.2rem;
-  box-shadow: inset 0px -6px 0px 0px #ffffff;
+  -webkit-box-shadow: inset 0px -6px 0px 0px #ffffff;
+          box-shadow: inset 0px -6px 0px 0px #ffffff;
 }
 
 .services__title {
@@ -481,9 +550,14 @@ input[type="radio"].visually-hidden {
 }
 
 .services__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin: 0;
   padding: 0;
 }
