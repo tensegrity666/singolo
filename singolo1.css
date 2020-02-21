@@ -346,13 +346,13 @@ input[type="radio"].visually-hidden {
 }
 
 .slider__control_previous {
-  background-image: url("/assets/chev.png");
+  background-image: url("./assets/chev.png");
   background-position: 41px 281px;
 }
 
 .slider__control_previous:focus,
 .slider__control_previous:hover {
-  background-image: url("/assets/chev.png");
+  background-image: url("./assets/chev.png");
   box-shadow: inset 10px 0px 20px -15px rgba(50, 55, 70, 0.7);
   transition: all 0.2s linear;
   filter: contrast(0.8);
@@ -363,14 +363,14 @@ input[type="radio"].visually-hidden {
 }
 
 .slider__control_next {
-  background-image: url("/assets/chev.png");
+  background-image: url("./assets/chev.png");
   background-position: 40px 292px;
   transform: rotate(180deg);
 }
 
 .slider__control_next:focus,
 .slider__control_next:hover {
-  background-image: url("/assets/chev.png");
+  background-image: url("./assets/chev.png");
   box-shadow: inset 10px 0px 20px -15px rgba(50, 55, 70, 1);
   transition: all 0.2s linear;
   filter: contrast(0.8);
@@ -384,7 +384,7 @@ input[type="radio"].visually-hidden {
   position: absolute;
   width: 218px;
   height: 460px;
-  background-image: url("/assets/iphone/iPhone_Vertical.svg");
+  background-image: url("./assets/iphone/iPhone_Vertical.svg");
   background-repeat: no-repeat;
   z-index: 1;
 }
@@ -397,7 +397,7 @@ input[type="radio"].visually-hidden {
 .iphone_vertical::after {
   position: absolute;
   content: "";
-  background-image: url("/assets/Layer_6.jpg");
+  background-image: url("./assets/Layer_6.jpg");
   display: block;
   top: 62px;
   left: 11px;
@@ -417,7 +417,7 @@ input[type="radio"].visually-hidden {
 .iphone_horizontal::after {
   position: absolute;
   content: "";
-  background-image: url("/assets/Layer_5.jpg");
+  background-image: url("./assets/Layer_5.jpg");
   display: block;
   top: 134px;
   right: -60px;
@@ -437,7 +437,7 @@ input[type="radio"].visually-hidden {
   height: 483px;
   top: 53px;
   right: 235px;
-  background-image: url("/assets/iphone/Shadow.png");
+  background-image: url("./assets/iphone/Shadow.png");
   transform: rotate(90deg) scale(1, -1);
 }
 
@@ -449,7 +449,7 @@ input[type="radio"].visually-hidden {
   height: 483px;
   top: 54px;
   left: 111px;
-  background-image: url("/assets/iphone/Shadow.png");
+  background-image: url("./assets/iphone/Shadow.png");
 }
 
 .services {
@@ -512,27 +512,27 @@ input[type="radio"].visually-hidden {
 }
 
 .services__item_design::before {
-  background-image: url("/assets/icons/pen.svg");
+  background-image: url("./assets/icons/pen.svg");
 }
 
 .services__item_ideas::before {
-  background-image: url("/assets/icons/bulb.svg");
+  background-image: url("./assets/icons/bulb.svg");
 }
 
 .services__item_love::before {
-  background-image: url("/assets/icons/heart.svg");
+  background-image: url("./assets/icons/heart.svg");
 }
 
 .services__item_responsive::before {
-  background-image: url("/assets/icons/phone.svg");
+  background-image: url("./assets/icons/phone.svg");
 }
 
 .services__item_support::before {
-  background-image: url("/assets/icons/bubble.svg");
+  background-image: url("./assets/icons/bubble.svg");
 }
 
 .services__item_feeling::before {
-  background-image: url("/assets/icons/star.svg");
+  background-image: url("./assets/icons/star.svg");
 }
 
 .services__item-title {
