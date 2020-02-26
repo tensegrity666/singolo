@@ -1,4 +1,4 @@
-'use srtict';
+'Use srtict';
 
 const { src, dest, watch, series } = require('gulp');
 const sass = require('gulp-sass');
@@ -15,10 +15,12 @@ const autoprefixer = require('autoprefixer');
 const del = require('del');
 const concat = require('gulp-concat');
 const gzip = require('gulp-gzip');
+const imagemin = require('gulp-imagemin');
+const sourcemap = require('gulp-sourcemaps');
 
 function server() {
   browserSync.init({
-    server: 'build',
+    server: 'build/',
     notify: false,
     open: false,
     cors: true,
@@ -27,16 +29,34 @@ function server() {
   watch('source/sass/**/*.scss', style);
   watch('source/*.html', series(html, refresh));
 };
+
 function style() {
   return src('source/sass/*.scss')
     .pipe(plumber([errorHandler()]))
+    .pipe(sourcemap.init())
     .pipe(sass())
     .pipe(postcss([autoprefixer()]))
     .pipe(dest('build/css/'))
     .pipe(csso())
     .pipe(gzip())
+    .pipe(sourcemap.write('.'))
     .pipe(dest('build/css/'))
     .pipe(browserSync.stream());
+};
+
+function image() {
+  return src('source/assets/images/**/*.{png,jpg,svg}')
+    .pipe(imagemin([
+      imagemin.optipng({ optimizationLevel: 5 }),
+      imagemin.mozjpeg({ quality: 75, progressive: true }),
+      imagemin.svgo({
+        plugins: [
+          { removeViewBox: true },
+          { cleanupIDs: false }
+        ]
+      })
+    ]))
+    .pipe(dest('source/assets/images/'));
 };
 
 function lint() {
@@ -55,10 +75,9 @@ function clean() {
 
 function copy() {
   return src([
-    'source/img/**',
-    'source/js/',
-    'source/*.ico',
-    'source/fonts/*.woff2'
+    'source/assets/images/**/*.{png,jpg,svg}',
+    'source/assets/*.ico',
+    'source/assets/fonts/*.woff2'
     ], {
       base: 'source'
     })
@@ -75,31 +94,32 @@ function html() {
     .pipe(plumber([errorHandler()]))
     .pipe(posthtml([include()]))
     .pipe(htmlmin())
-    .pipe(gzip({
-      threshold: true,
-      deleteMode: 'build/',
-      skipGrowingFiles: true
-    }))
     .pipe(dest('build/'));
 };
+
+// .pipe(gzip({
+//     //   threshold: true,
+//     //   deleteMode: 'build/',
+//     //   skipGrowingFiles: true
+//     // }))
 
 function refresh(done) {
   browserSync.reload();
   done();
 };
 
-const build = series(style, html, jsmin, copy);
-const start = series(clean, build, server);
-
 function jsmin() {
-  return gulp.src('source/js/**/*.js')
+  return gulp.src('source/scripts/**/*.js')
     .pipe(plumber([errorHandler()]))
     .pipe(concat('bundle.js'))
     .pipe(terser())
     .pipe(gzip({ skipGrowingFiles: true }))
-    .pipe(gulp.dest('build/js/'))
+    .pipe(gulp.dest('build/scripts/'))
     .pipe(browserSync.stream());
 };
+
+const build = series(style, html, copy);
+const start = series(clean, build, server);
 
 exports.style = style;
 exports.lint = lint;
@@ -111,3 +131,4 @@ exports.copy = copy;
 exports.build = build;
 exports.start = start;
 exports.jsmin = jsmin;
+exports.image = image;

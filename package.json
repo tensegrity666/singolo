@@ -1,7 +1,7 @@
 {
-  "name": "unity",
+  "name": "singolo",
   "version": "1.0.0",
-  "description": "adaptive landing page",
+  "description": "RSSchool training project",
   "main": "gulpfile.js",
   "author": "Roman Yakovlev",
   "license": "ISC",
@@ -15,10 +15,12 @@
     "gulp-csso": "^3.0.0",
     "gulp-gzip": "^1.4.2",
     "gulp-htmlmin": "^5.0.1",
+    "gulp-imagemin": "^7.1.0",
     "gulp-plumber": "^1.2.1",
     "gulp-postcss": "^8.0.0",
     "gulp-posthtml": "^3.0.0",
     "gulp-sass": "^4.0.x",
+    "gulp-sourcemaps": "^2.6.5",
     "gulp-stylelint": "^10.0.0",
     "gulp-terser": "^1.2.0",
     "posthtml-include": "^1.2.0",
@@ -27,6 +29,7 @@
     "stylelint-config-standard": "^19.0.0"
   },
   "scripts": {
+    "imagemin": "gulp image",
     "test": "gulp lint",
     "start": "gulp start"
   },
@@ -45,10 +48,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tensegrity666/unity.git"
+    "url": "git+https://github.com/tensegrity666/singolo.git"
   },
-  "homepage": "https://github.com/tensegrity666/unity#readme",
+  "homepage": "https://github.com/tensegrity666/singolo#readme",
   "bugs": {
-    "url": "https://github.com/tensegrity666/unity/issues"
+    "url": "https://github.com/tensegrity666/singolo/issues"
   }
 }
