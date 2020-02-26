@@ -1,0 +1,11 @@
+.link {
+  color: $font-color-main;
+  text-decoration: none;
+  cursor: pointer;
+  transition: $transition;
+
+  &:not([href]),
+  &:not([href]):hover {
+    color: $accent;
+  }
+}

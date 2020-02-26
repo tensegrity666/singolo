@@ -1,0 +1,19 @@
+.logo {
+  padding: 0;
+  margin: 0;
+
+  &__item {
+    list-style: none;
+
+    &-link {
+      font-size: 2.41rem;
+      font-weight: 700;
+      line-height: 1.7rem;
+      text-transform: uppercase;
+    }
+  }
+
+  &__link-star {
+    color: $accent;
+  }
+}
