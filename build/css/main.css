@@ -1,0 +1,425 @@
+html {
+  -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0; }
+
+h1 {
+  margin: 0.67rem 0;
+  font-size: 2rem; }
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible; }
+
+pre {
+  font-family: monospace;
+  font-size: 1rem; }
+
+a {
+  background-color: transparent; }
+
+b,
+strong {
+  font-weight: bolder; }
+
+code,
+kbd,
+samp {
+  font-family: monospace;
+  font-size: 1rem; }
+
+small {
+  font-size: 80%; }
+
+sub,
+sup {
+  position: relative;
+  font-size: 75%;
+  line-height: 0;
+  vertical-align: baseline; }
+
+sub {
+  bottom: -0.25rem; }
+
+sup {
+  top: -0.5rem; }
+
+img {
+  border-style: none; }
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15; }
+
+button,
+input {
+  overflow: visible; }
+
+button,
+select {
+  text-transform: none; }
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button; }
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  padding: 0;
+  border-style: none; }
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText; }
+
+fieldset {
+  padding: 0.35rem 0.75rem 0.625rem; }
+
+legend {
+  box-sizing: border-box;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  color: inherit;
+  white-space: normal; }
+
+progress {
+  vertical-align: baseline; }
+
+textarea {
+  overflow: auto; }
+
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  padding: 0; }
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+[type="search"] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px; }
+
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+template {
+  display: none; }
+
+[hidden] {
+  display: none; }
+
+.visually-hidden:not(focus):not(active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  white-space: nowrap;
+  border: 0;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden; }
+
+.visually-hidden:not(focus):not(active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  white-space: nowrap;
+  border: 0;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden; }
+
+:root {
+  font-family: "Lato", sans-serif;
+  font-size: 10px;
+  line-height: 2;
+  scroll-behavior: smooth; }
+
+.page {
+  width: 1020px;
+  margin: 0 auto;
+  box-shadow: 0 1px 3px 0 rgba(50, 55, 70, 0.7); }
+
+.page::-webkit-scrollbar {
+  width: 1.5rem; }
+
+.page::-webkit-scrollbar-track {
+  background-color: #f06c64; }
+
+.page::-webkit-scrollbar-thumb {
+  background-color: #2d303a;
+  border-radius: 2rem;
+  outline: 1px solid #f06c64;
+  box-shadow: inset 0 0 10px #000000; }
+
+.wrapper {
+  box-sizing: border-box;
+  padding: 0 4rem; }
+
+.header__main {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-height: 95px;
+  color: #ffffff;
+  background-color: #2d303a;
+  box-shadow: inset 0 -6px 0 0 #323746; }
+
+.logo {
+  padding: 0;
+  margin: 0; }
+  .logo__item {
+    list-style: none; }
+    .logo__item-link {
+      font-size: 2.41rem;
+      font-weight: 700;
+      line-height: 1.7rem;
+      text-transform: uppercase; }
+  .logo__link-star {
+    color: #f06c64; }
+
+.link {
+  color: #ffffff;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear; }
+  .link:not([href]), .link:not([href]):hover {
+    color: #f06c64; }
+
+.navigation-main {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end; }
+  .navigation-main__list {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    min-width: 371px;
+    padding: 0;
+    margin: 0; }
+  .navigation-main__item {
+    position: relative;
+    padding-right: 2.8rem;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 4rem;
+    list-style: none; }
+    .navigation-main__item::after {
+      position: absolute;
+      top: 0.2rem;
+      right: 1.1rem;
+      font-weight: 300;
+      color: #494e62;
+      content: "\00B7"; }
+    .navigation-main__item:last-child, .navigation-main__item:last-child::after {
+      padding-right: 0;
+      content: ""; }
+  .navigation-main__item-link {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: uppercase; }
+    .navigation-main__item-link:hover {
+      color: #f06c64;
+      -webkit-transition: all 0.2s linear;
+      transition: all 0.2s linear; }
+
+.slider {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 600px;
+  background-color: #f06c64;
+  box-shadow: inset 0 -6px 0 0 #ea676b; }
+  .slider__gallery {
+    width: 80%;
+    padding: 0;
+    margin: 0;
+    list-style: none; }
+  .slider__control_previous {
+    background-image: url("./assets/chev.png");
+    background-position: 41px 281px; }
+    .slider__control_previous:focus, .slider__control_previous:hover {
+      background-image: url("./assets/chev.png"); }
+  .slider__control_next {
+    background-image: url("./assets/chev.png");
+    background-position: 40px 292px;
+    -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+            transform: rotate(180deg); }
+    .slider__control_next:focus, .slider__control_next:hover {
+      background-image: url("./assets/chev.png"); }
+  .slider__control_previous:focus, .slider__control_previous:hover, .slider__control_next:focus, .slider__control_next:hover {
+    -webkit-filter: contrast(0.8);
+            filter: contrast(0.8);
+    box-shadow: inset 10px 0 20px -15px #323746;
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear; }
+  .slider__control_previous:active, .slider__control_next:active {
+    box-shadow: inset 10px 0 20px -15px rgba(50, 55, 70, 0.8); }
+  .slider__slide_slide-1::before {
+    position: absolute;
+    top: 53px;
+    right: 235px;
+    display: block;
+    width: 240px;
+    height: 483px;
+    content: "";
+    background-image: url("./assets/iphone/Shadow.png");
+    -webkit-transform: rotate(90deg) scale(1, -1);
+        -ms-transform: rotate(90deg) scale(1, -1);
+            transform: rotate(90deg) scale(1, -1); }
+  .slider__slide_slide-1::after {
+    position: absolute;
+    top: 54px;
+    left: 111px;
+    display: block;
+    width: 240px;
+    height: 483px;
+    content: "";
+    background-image: url("./assets/iphone/Shadow.png"); }
+
+.controls__list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+  .controls__list_control {
+    box-sizing: border-box;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100px;
+    height: 600px;
+    padding: 0;
+    cursor: pointer;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    outline: none;
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear; }
+
+.iphone {
+  position: absolute;
+  z-index: 1;
+  width: 218px;
+  height: 460px;
+  background-image: url("/assets/images/iphone/iPhone_Vertical.svg");
+  background-repeat: no-repeat; }
+  .iphone_vertical {
+    top: 53px;
+    left: 112px; }
+    .iphone_vertical::after {
+      position: absolute;
+      top: 62px;
+      left: 11px;
+      box-sizing: border-box;
+      display: block;
+      width: 195px;
+      height: 339px;
+      content: "";
+      background-image: url("/assets/images/Layer_6.jpg");
+      border: 3px solid #c6c6c6;
+      border-radius: 3px; }
+  .iphone_horizontal {
+    top: 53px;
+    right: 258px;
+    -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+            transform: rotate(90deg); }
+    .iphone_horizontal::after {
+      position: absolute;
+      top: 134px;
+      right: -60px;
+      box-sizing: border-box;
+      display: block;
+      width: 339px;
+      height: 195px;
+      content: "";
+      background-image: url("/assets/images/Layer_5.jpg");
+      border: 3px solid #c6c6c6;
+      border-radius: 3px;
+      -webkit-transform: rotate(-90deg);
+          -ms-transform: rotate(-90deg);
+              transform: rotate(-90deg); }
