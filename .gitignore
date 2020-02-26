@@ -1,0 +1,12 @@
+node_modules/
+build/
+temp/
+.DS_Store
+.vscode
+*.ai
+*.log
+*.pdf
+*.psd
+npm-debug.*
+Thumbs.db
+.stylelintrc.json
