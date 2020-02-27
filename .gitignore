@@ -1,6 +1,5 @@
 node_modules/
 build/
-temp/
 .DS_Store
 .vscode
 *.ai
@@ -9,4 +8,3 @@ temp/
 *.psd
 npm-debug.*
 Thumbs.db
-.stylelintrc.json

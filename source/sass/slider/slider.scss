@@ -15,23 +15,23 @@
   }
 
   &__control_previous {
-    background-image: url("./assets/chev.png");
+    background-image: url("/assets/images/icons/chev.png");
     background-position: 41px 281px;
 
     &:focus,
     &:hover {
-      background-image: url("./assets/chev.png");
+      background-image: url("/assets/images/icons/chev.png");
     }
   }
 
   &__control_next {
-    background-image: url("./assets/chev.png");
+    background-image: url("/assets/images/icons/chev.png");
     background-position: 40px 292px;
     transform: rotate(180deg);
 
     &:focus,
     &:hover {
-      background-image: url("./assets/chev.png");
+      background-image: url("/assets/images/icons/chev.png");
     }
   }
 
@@ -57,7 +57,7 @@
     width: 240px;
     height: 483px;
     content: "";
-    background-image: url("./assets/iphone/Shadow.png");
+    background-image: url("/assets/images/iphone/Shadow.png");
     transform: rotate(90deg) scale(1, -1);
   }
 
@@ -69,6 +69,6 @@
     width: 240px;
     height: 483px;
     content: "";
-    background-image: url("./assets/iphone/Shadow.png");
+    background-image: url("/assets/images/iphone/Shadow.png");
   }
 }
