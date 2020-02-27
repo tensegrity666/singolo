@@ -2,7 +2,8 @@ $font: "Lato", sans-serif;
 $width: 1020px;
 $transition: all 0.2s linear;
 
-$accent: #f06c64;
+$accent-color: #f06c64;
+$default-color: #000000;
 $wrapper-shadow: 0 1px 3px 0 rgba(50, 55, 70, 0.7);
 
 $wrapper-padding: 4rem;
@@ -30,3 +31,7 @@ $services-title-color: #666d89;
 $services-item-width: 221px;
 $services-item-height: 100px;
 $services-icon-size: 55px;
+
+$works-item-width: 220px;
+$works-item-height: 187px;
+$works-gap: 10px;

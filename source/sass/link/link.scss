@@ -6,6 +6,10 @@
 
   &:not([href]),
   &:not([href]):hover {
-    color: $accent;
+    color: $accent-color;
+  }
+
+  &_contacts {
+    color: $default-color;
   }
 }
