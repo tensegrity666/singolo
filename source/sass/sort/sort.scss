@@ -1,0 +1,11 @@
+.sort {
+  display: flex;
+  justify-content: start;
+
+  &__item {
+    padding: 6px;
+    text-transform: capitalize;
+    border: 1px solid $services-item-color;
+    border-radius: 3px;
+  }
+}

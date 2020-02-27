@@ -1,0 +1,18 @@
+.portfolio {
+  color: $services-item-color;
+  background-color: $background-color-header;
+
+  &__title {
+    font-size: 3rem;
+    line-height: 17.86px;
+    color: $services-title-color;
+    text-align: start;
+    text-transform: capitalize;
+  }
+
+  &__paragraph {
+    font-size: 1.8rem;
+    line-height: 3rem;
+    text-align: start;
+  }
+}
