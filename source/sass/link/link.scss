@@ -12,6 +12,11 @@
   &_contacts {
     position: relative;
     padding-right: 40px;
+    transition: 0.1s linear;
+
+    &:hover::before {
+      @include interactive;
+    }
 
     &::before {
       position: absolute;
