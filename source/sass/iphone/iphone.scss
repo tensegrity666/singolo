@@ -1,0 +1,48 @@
+.iphone {
+  position: absolute;
+  z-index: 1;
+  width: 218px;
+  height: 460px;
+  background-image: url("/assets/images/iphone/iPhone_Vertical.svg");
+  background-repeat: no-repeat;
+
+  &_vertical {
+    top: 53px;
+    left: 112px;
+
+    &::after {
+      position: absolute;
+      top: 62px;
+      left: 11px;
+      box-sizing: border-box;
+      display: block;
+      width: $iphone-width;
+      height: $iphone-height;
+      content: "";
+      background-image: url("/assets/images/iphone/Layer_6.jpg");
+      border: $iphone-border;
+      border-radius: 3px;
+    }
+  }
+
+  &_horizontal {
+    top: 53px;
+    right: 258px;
+    transform: rotate(90deg);
+
+    &::after {
+      position: absolute;
+      top: 134px;
+      right: -60px;
+      box-sizing: border-box;
+      display: block;
+      width: $iphone-height;
+      height: $iphone-width;
+      content: "";
+      background-image: url("/assets/images/iphone/Layer_5.jpg");
+      border: $iphone-border;
+      border-radius: 3px;
+      transform: rotate(-90deg);
+    }
+  }
+}

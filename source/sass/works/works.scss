@@ -1,0 +1,9 @@
+.works {
+  display: grid;
+  grid-template-rows: repeat(3, $works-item-height);
+  grid-template-columns: repeat(4, $works-item-width);
+  justify-content: space-between;
+  max-height: calc(207px * 3);
+  gap: $works-gap;
+  overflow: hidden;
+}
