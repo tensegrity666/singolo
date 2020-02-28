@@ -7,7 +7,8 @@
   <link
     href="https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="singolo1.css">
+  <link rel="stylesheet" href="./build/css/main.css">
+  <meta name="keywords" content="RSSchool, Rolling Scopes, training">
   <meta name="description" content="Singolo, web-design studio">
   <title>Singolo</title>
 </head>
@@ -17,7 +18,7 @@
   <header class="header__main wrapper">
     <ul class="logo">
       <li class="logo__item">
-        <a class="logo__item-link link" href="/singolo1.html">
+        <a class="logo__item-link link" href="index.html">
           singolo<span class="logo__link-star">*</span>
         </a>
       </li>
@@ -31,17 +32,17 @@
           </a>
         </li>
         <li class="navigation-main__item">
-          <a class="navigation-main__item-link link" href="#">
+          <a class="navigation-main__item-link link" href="#servc">
             services
           </a>
         </li>
         <li class="navigation-main__item">
-          <a class="navigation-main__item-link link" href="#">
+          <a class="navigation-main__item-link link" href="#portfl">
             portfolio
           </a>
         </li>
         <li class="navigation-main__item">
-          <a class="navigation-main__item-link link" href="#">
+          <a class="navigation-main__item-link link" href="#bout">
             about
           </a>
         </li>
@@ -66,15 +67,15 @@
 
         <ul class="controls__list" aria-label="Gallery controls">
           <li>
-            <button class="control slider__control_previous" id="previous" aria-label="Previous"></button>
+            <button class="controls__list_control slider__control_previous" id="previous" aria-label="Previous"></button>
           </li>
           <li>
-            <button class="control slider__control_next" id="next" aria-label="Next"></button>
+            <button class="controls__list_control slider__control_next" id="next" aria-label="Next"></button>
           </li>
         </ul>
     </section>
 
-    <section class="services wrapper">
+    <section class="services wrapper" id="servc">
       <h2 class="services__title">our services</h2>
       <p class="services__paragraph">
         Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis,
@@ -123,6 +124,141 @@
             Quisque luctus, quam eget molestie commodo, lacus purus cursus purus, nec rutrum
             tellus dolor id lorem.
           </p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="portfolio wrapper" id="portfl">
+      <h2 class="portfolio__title">portfolio</h2>
+      <p class="portfolio__paragraph">
+        Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget
+        lacinia
+        odio sem nec elit.
+      </p>
+      <ul class="portfolio__sort sort">
+        <li class="sort__item">all</li>
+        <li class="sort__item">web design</li>
+        <li class="sort__item">graphic design</li>
+        <li class="sort__item">artwork</li>
+      </ul>
+      <div class="works">
+        <img src="./build/assets/images/portfolio/Project.png"
+          alt="Boat with yellow sails">
+        <img src="./build/assets/images/portfolio/Project-2.png" alt="Circle green girl">
+        <img src="./build/assets/images/portfolio/Layer_9.png"
+          alt="Black-and-white graphics">
+        <img src="./build/assets/images/portfolio/Project-3.png"
+          alt="Golden robot with hearth  in his hand">
+        <img src="./build/assets/images/portfolio/Project-4.png" alt="Stranger things">
+        <img src="./build/assets/images/portfolio/Project-5.png" alt="Colored plant">
+        <img src="./build/assets/images/portfolio/Layer_11.png"
+          alt="White, blue and red abstract graphics">
+        <img src="./build/assets/images/portfolio/Layer_8.png"
+          alt="Drawed hens with eggs">
+        <img src="./build/assets/images/portfolio/Project-6.png"
+          alt="Green giant with tower on head">
+        <img src="./build/assets/images/portfolio/Project-7.png" alt="Words graphics">
+        <img src="./build/assets/images/portfolio/Project-8.png" alt="White troll">
+        <img src="./build/assets/images/portfolio/Project-9.png"
+          alt="Something brown and broken glasses">
+      </div>
+    </section>
+
+    <section class="team wrapper" id="bout">
+      <h2 class="team__title">about us</h2>
+      <p class="team__paragraph">
+        Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis
+        mollis,
+        non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec
+        elit.
+        Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.
+      </p>
+      <ul class="team__members">
+        <li class="team__person">
+          <img src="./build/assets/images/team/photo-1.png" width="300" height="300"
+            alt="Adam Jensen">
+          <h3 class="team__person-title">Adam Jensen</h3>
+          <p class="team__person-paragraph">
+            Quisque luctus, quam eget molestie commodo, lacus purus cursus purus,
+            nec rutrum
+            tellus dolor id lorem.
+          </p>
+          <ul class="team__contacts">
+            <li>
+              <a class="link link_contacts link_contacts-facebook" href="#"><span
+                  class="visually-hidden">Facebook</span></a>
+            </li>
+            <li>
+              <a class="link link_contacts link_contacts-google" href="#"><span
+                  class="visually-hidden">Google+</span></a>
+            </li>
+            <li>
+              <a class="link link_contacts link_contacts-twitter" href="#"><span
+                  class="visually-hidden">Twitter</span></a>
+            </li>
+            <li>
+              <a class="link link_contacts link_contacts-linkedin" href="#"><span
+                  class="visually-hidden">Linkedin</span></a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="team__person">
+          <img src="./build/assets/images/team/photo-2.png" width="300" height="300"
+            alt="Desmond Miles">
+          <h3 class="team__person-title">Desmond Miles</h3>
+          <p class="team__person-paragraph">
+            Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam
+            laoreet,
+            viverra lacus ut, ultrices velit.
+          </p>
+          <ul class="team__contacts">
+            <li>
+              <a class="link link_contacts link_contacts-facebook" href="#"><span
+                  class="visually-hidden">Facebook</span></a>
+            </li>
+            <li>
+              <a class="link link_contacts link_contacts-google" href="#"><span
+                  class="visually-hidden">Google+</span></a>
+            </li>
+            <li>
+              <a class="link link_contacts link_contacts-twitter" href="#"><span
+                  class="visually-hidden">Twitter</span></a>
+            </li>
+            <li>
+              <a class="link link_contacts link_contacts-linkedin" href="#"><span
+                  class="visually-hidden">Linkedin</span></a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="team__person">
+          <img src="./build/assets/images/team/photo-3.png" width="300" height="300"
+            alt="Scolara Visari">
+          <h3 class="team__person-title">Scolara Visari</h3>
+          <p class="team__person-paragraph">
+            Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et
+            consequat
+            felis. Quisque condimentum.
+          </p>
+          <ul class="team__contacts">
+            <li>
+              <a class="link link_contacts link_contacts-facebook" href="#"><span
+                  class="visually-hidden">Facebook</span></a>
+            </li>
+            <li>
+              <a class="link link_contacts link_contacts-google" href="#"><span
+                  class="visually-hidden">Google+</span></a>
+            </li>
+            <li>
+              <a class="link link_contacts link_contacts-twitter" href="#"><span
+                  class="visually-hidden">Twitter</span></a>
+            </li>
+            <li>
+              <a class="link link_contacts link_contacts-linkedin" href="#"><span
+                  class="visually-hidden">Linkedin</span></a>
+            </li>
+          </ul>
         </li>
       </ul>
     </section>

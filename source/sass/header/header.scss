@@ -1,0 +1,12 @@
+.header {
+  &__main {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: $header-height;
+    color: $font-color-main;
+    background-color: $background-color-header;
+    box-shadow: $bottom-line;
+  }
+}
