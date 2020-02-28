@@ -18,11 +18,9 @@
   }
 
   &__paragraph {
-    margin: 0;
+    @include paragraph;
+
     margin-bottom: 4.5rem;
-    font-size: 1.8rem;
-    font-weight: 300;
-    line-height: 3rem;
   }
 
   &__list {

@@ -1,12 +1,12 @@
 .sort {
 
   &__item {
-    padding: 6px;
+    padding: 6px 3px;
     line-height: 1rem;
     text-align: center;
     text-transform: capitalize;
     vertical-align: middle;
     border: 1px solid $services-item-color;
-    border-radius: 3px;
+    border-radius: 6px;
   }
 }
