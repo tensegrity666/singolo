@@ -1,0 +1,28 @@
+@mixin reset-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+@mixin section-vertical-paddings {
+  padding-top: 47px;
+  padding-bottom: 73px;
+}
+
+@mixin paragraph {
+  margin: 0;
+  font-size: 1.8rem;
+  font-weight: 300;
+  line-height: 3rem;
+  color: $services-item-color;
+  text-align: start;
+}
+
+@mixin title {
+  margin: 0;
+  font-size: 3rem;
+  font-weight: 900;
+  color: $services-title-color;
+  text-align: start;
+  text-transform: capitalize;
+}

@@ -1,18 +1,29 @@
 .portfolio {
+  @include section-vertical-paddings;
+
   color: $services-item-color;
   background-color: $background-color-header;
 
   &__title {
-    font-size: 3rem;
-    line-height: 17.86px;
-    color: $services-title-color;
-    text-align: start;
-    text-transform: capitalize;
+    @include title;
+
+    margin-bottom: 8px;
   }
 
   &__paragraph {
-    font-size: 1.8rem;
-    line-height: 3rem;
-    text-align: start;
+    @include paragraph;
+
+    margin-bottom: 20px;
+  }
+
+  &__sort {
+    @include reset-list;
+
+    display: grid;
+    grid-template-rows: 24px;
+    grid-template-columns: 29px 78px 93px 57px;
+    justify-content: start;
+    gap: 10px;
+    margin-bottom: 20px;
   }
 }

@@ -10,6 +10,37 @@
   }
 
   &_contacts {
-    color: $default-color;
+    position: relative;
+    padding-right: 38px;
+
+    &::before {
+      position: absolute;
+      top: 0.1rem;
+      left: 0.1rem;
+      display: block;
+      width: $social-icon-size;
+      height: $social-icon-size;
+      content: "";
+      background-repeat: no-repeat;
+      background-position: center;
+      border: 1px solid $services-title-color;
+      border-radius: 50%;
+    }
+
+    &-facebook::before {
+      background-image: url("/assets/images/icons/facebook.png");
+    }
+
+    &-google::before {
+      background-image: url("/assets/images/icons/google.png");
+    }
+
+    &-twitter::before {
+      background-image: url("/assets/images/icons/twitter.png");
+    }
+
+    &-linkedin::before {
+      background-image: url("/assets/images/icons/linkedin.png");
+    }
   }
 }

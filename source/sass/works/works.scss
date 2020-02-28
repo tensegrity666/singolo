@@ -3,6 +3,7 @@
   grid-template-rows: repeat(3, $works-item-height);
   grid-template-columns: repeat(4, $works-item-width);
   justify-content: space-between;
+  max-height: calc(197px * 3);
   gap: $works-gap;
-  margin: $works-gap;
+  overflow: hidden;
 }
