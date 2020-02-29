@@ -1,0 +1,31 @@
+.contacts {
+  @include section-vertical-paddings;
+
+  background-color: $accent-color;
+
+  &__title {
+    @include title;
+
+    color: #f0d8d9;
+  }
+
+  &__paragraph {
+    @include paragraph;
+
+    margin-bottom: 48px;
+    color: #f0d8d9;
+  }
+
+  &__container {
+    display: flex;
+  }
+
+  &__form {
+    width: 619px;
+  }
+
+  &__contact-info {
+
+    padding-left: 20px;
+  }
+}

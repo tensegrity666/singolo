@@ -248,14 +248,13 @@ input[type="radio"].visually-hidden {
       border: 1px solid #666d89;
       border-radius: 50%; }
     .link_contacts-facebook::before {
-
-      background-image: url("../assets/images/icons/facebook.png"); }
+      background-image: url("/../assets/images/icons/facebook.png"); }
     .link_contacts-google::before {
-      background-image: url("../assets/images/icons/google.png"); }
+      background-image: url("/../assets/images/icons/google.png"); }
     .link_contacts-twitter::before {
-      background-image: url("../assets/images/icons/twitter.png"); }
+      background-image: url("/../assets/images/icons/twitter.png"); }
     .link_contacts-linkedin::before {
-      background-image: url("../assets/images/icons/linkedin.png"); }
+      background-image: url("/../assets/images/icons/linkedin.png"); }
 
 .navigation-main {
   display: -webkit-box;
@@ -330,22 +329,18 @@ input[type="radio"].visually-hidden {
     margin: 0;
     list-style: none; }
   .slider__control_previous {
-
-    background-image: url("../assets/images/icons/chev.png");
-    background-position: 42px 281px; }
+    background-image: url("/assets/images/icons/chev.png");
+    background-position: 41px 281px; }
     .slider__control_previous:focus, .slider__control_previous:hover {
-      background-image: url("../assets/images/icons/chev.png"); }
+      background-image: url("/assets/images/icons/chev.png"); }
   .slider__control_next {
-    background-image: url("../assets/images/icons/chev.png");
-
+    background-image: url("/assets/images/icons/chev.png");
     background-position: 40px 292px;
     -webkit-transform: rotate(180deg);
         -ms-transform: rotate(180deg);
             transform: rotate(180deg); }
     .slider__control_next:focus, .slider__control_next:hover {
-
-      background-image: url("../assets/images/icons/chev.png"); }
-
+      background-image: url("/assets/images/icons/chev.png"); }
   .slider__control_previous:focus, .slider__control_previous:hover, .slider__control_next:focus, .slider__control_next:hover {
     -webkit-filter: contrast(0.8);
             filter: contrast(0.8);
@@ -356,27 +351,25 @@ input[type="radio"].visually-hidden {
     box-shadow: inset 10px 0 20px -15px rgba(50, 55, 70, 0.8); }
   .slider__slide_slide-1::before {
     position: absolute;
-    top: 52px;
-    right: 233px;
+    top: 53px;
+    right: 235px;
     display: block;
     width: 240px;
     height: 483px;
     content: "";
-
-    background-image: url("../assets/images/iphone/Shadow.png");
-
+    background-image: url("/assets/images/iphone/Shadow.png");
     -webkit-transform: rotate(90deg) scale(1, -1);
         -ms-transform: rotate(90deg) scale(1, -1);
             transform: rotate(90deg) scale(1, -1); }
   .slider__slide_slide-1::after {
     position: absolute;
-    top: 53px;
-    left: 112px;
+    top: 54px;
+    left: 111px;
     display: block;
     width: 240px;
     height: 483px;
     content: "";
-    background-image: url("../assets/images/iphone/Shadow.png"); }
+    background-image: url("/assets/images/iphone/Shadow.png"); }
 
 .controls__list {
   display: -webkit-box;
@@ -414,6 +407,7 @@ input[type="radio"].visually-hidden {
     cursor: pointer;
     background-color: transparent;
     background-repeat: no-repeat;
+    background-position: center;
     border: none;
     outline: none;
     -webkit-transition: all 0.2s linear;
@@ -424,7 +418,7 @@ input[type="radio"].visually-hidden {
   z-index: 1;
   width: 218px;
   height: 460px;
-  background-image: url("../assets/images/iphone/iPhone_Vertical.svg");
+  background-image: url("/assets/images/iphone/iPhone_Vertical.svg");
   background-repeat: no-repeat; }
   .iphone_vertical {
     top: 53px;
@@ -435,11 +429,10 @@ input[type="radio"].visually-hidden {
       left: 11px;
       box-sizing: border-box;
       display: block;
-      width: 194px;
+      width: 195px;
       height: 339px;
       content: "";
-      background-image: url("../assets/images/iphone/Layer_6.jpg");
-      background-repeat: no-repeat;
+      background-image: url("/assets/images/iphone/Layer_6.jpg");
       border: 3px solid #c6c6c6;
       border-radius: 3px; }
   .iphone_horizontal {
@@ -455,10 +448,9 @@ input[type="radio"].visually-hidden {
       box-sizing: border-box;
       display: block;
       width: 339px;
-      height: 194px;
+      height: 195px;
       content: "";
-      background-image: url("../assets/images/iphone/Layer_5.jpg");
-      background-repeat: no-repeat;
+      background-image: url("/assets/images/iphone/Layer_5.jpg");
       border: 3px solid #c6c6c6;
       border-radius: 3px;
       -webkit-transform: rotate(-90deg);
@@ -523,18 +515,17 @@ input[type="radio"].visually-hidden {
       border: 2px solid #666d89;
       border-radius: 50%; }
     .services__item_design::before {
-      background-image: url("../assets/images/icons/pen.svg"); }
+      background-image: url("/assets/images/icons/pen.svg"); }
     .services__item_ideas::before {
-      background-image: url("../assets/images/icons/bulb.svg"); }
+      background-image: url("/assets/images/icons/bulb.svg"); }
     .services__item_love::before {
-      background-image: url("../assets/images/icons/heart.svg"); }
+      background-image: url("/assets/images/icons/heart.svg"); }
     .services__item_responsive::before {
-      background-image: url("../assets/images/icons/phone.svg"); }
+      background-image: url("/assets/images/icons/phone.svg"); }
     .services__item_support::before {
-      background-image: url("../assets/images/icons/bubble.svg"); }
+      background-image: url("/assets/images/icons/bubble.svg"); }
     .services__item_feeling::before {
-      background-image: url("../assets/images/icons/star.svg"); }
-
+      background-image: url("/assets/images/icons/star.svg"); }
     .services__item-title {
       margin: 0;
       margin-bottom: 1rem;
@@ -565,7 +556,7 @@ input[type="radio"].visually-hidden {
 
 .team {
   padding-top: 47px;
-  padding-bottom: 89px;
+  padding-bottom: 73px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -594,7 +585,7 @@ input[type="radio"].visually-hidden {
     line-height: 3rem;
     color: #767e9e;
     text-align: start;
-    margin-bottom: 41px;
+    margin-bottom: 4rem;
     line-height: 3.2rem; }
   .team__members {
     padding: 0;
@@ -655,7 +646,7 @@ input[type="radio"].visually-hidden {
             justify-content: start; }
 
 .portfolio {
-  padding-top: 45px;
+  padding-top: 47px;
   padding-bottom: 73px;
   color: #767e9e;
   background-color: #2d303a;
@@ -711,3 +702,61 @@ input[type="radio"].visually-hidden {
     -webkit-transform: translateY(-1px);
         -ms-transform: translateY(-1px);
             transform: translateY(-1px); }
+
+.contacts {
+  padding-top: 47px;
+  padding-bottom: 73px;
+  background-color: #f06c64; }
+  .contacts__title {
+    margin: 0;
+    font-size: 3rem;
+    font-weight: 900;
+    color: #666d89;
+    text-align: start;
+    text-transform: capitalize;
+    color: #f0d8d9; }
+  .contacts__paragraph {
+    margin: 0;
+    font-size: 1.72rem;
+    font-weight: 300;
+    line-height: 3rem;
+    color: #767e9e;
+    text-align: start;
+    margin-bottom: 48px;
+    color: #f0d8d9; }
+  .contacts__container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+  .contacts__form {
+    width: 619px; }
+  .contacts__contact-info {
+    padding-left: 20px; }
+
+.form {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.footer {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px 40px 40px;
+  background-color: #2d303a; }
