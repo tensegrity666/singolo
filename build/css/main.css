@@ -248,6 +248,7 @@ input[type="radio"].visually-hidden {
       border: 1px solid #666d89;
       border-radius: 50%; }
     .link_contacts-facebook::before {
+
       background-image: url("../assets/images/icons/facebook.png"); }
     .link_contacts-google::before {
       background-image: url("../assets/images/icons/google.png"); }
@@ -329,18 +330,22 @@ input[type="radio"].visually-hidden {
     margin: 0;
     list-style: none; }
   .slider__control_previous {
+
     background-image: url("../assets/images/icons/chev.png");
     background-position: 41px 281px; }
     .slider__control_previous:focus, .slider__control_previous:hover {
       background-image: url("../assets/images/icons/chev.png"); }
   .slider__control_next {
     background-image: url("../assets/images/icons/chev.png");
+
     background-position: 40px 292px;
     -webkit-transform: rotate(180deg);
         -ms-transform: rotate(180deg);
             transform: rotate(180deg); }
     .slider__control_next:focus, .slider__control_next:hover {
+
       background-image: url("../assets/images/icons/chev.png"); }
+
   .slider__control_previous:focus, .slider__control_previous:hover, .slider__control_next:focus, .slider__control_next:hover {
     -webkit-filter: contrast(0.8);
             filter: contrast(0.8);
@@ -357,7 +362,9 @@ input[type="radio"].visually-hidden {
     width: 240px;
     height: 483px;
     content: "";
+
     background-image: url("../assets/images/iphone/Shadow.png");
+
     -webkit-transform: rotate(90deg) scale(1, -1);
         -ms-transform: rotate(90deg) scale(1, -1);
             transform: rotate(90deg) scale(1, -1); }
@@ -433,6 +440,7 @@ input[type="radio"].visually-hidden {
       height: 339px;
       content: "";
       background-image: url("../assets/images/iphone/Layer_6.jpg");
+
       border: 3px solid #c6c6c6;
       border-radius: 3px; }
   .iphone_horizontal {
@@ -451,6 +459,7 @@ input[type="radio"].visually-hidden {
       height: 195px;
       content: "";
       background-image: url("../assets/images/iphone/Layer_5.jpg");
+
       border: 3px solid #c6c6c6;
       border-radius: 3px;
       -webkit-transform: rotate(-90deg);
@@ -526,6 +535,7 @@ input[type="radio"].visually-hidden {
       background-image: url("../assets/images/icons/bubble.svg"); }
     .services__item_feeling::before {
       background-image: url("../assets/images/icons/star.svg"); }
+
     .services__item-title {
       margin: 0;
       margin-bottom: 1rem;
