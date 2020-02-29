@@ -20,6 +20,7 @@
       height: $iphone-height;
       content: "";
       background-image: url("/assets/images/iphone/Layer_6.jpg");
+      background-repeat: no-repeat;
       border: $iphone-border;
       border-radius: 3px;
     }
