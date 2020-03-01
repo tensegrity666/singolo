@@ -26,23 +26,23 @@
 
     <div class="contacts__container">
       <form class="contacts__form form" action="" method="post">
-        <input type="text" name="name" placeholder="Name (Required)" required>
-        <input type="email" name="email" placeholder="Email (Required)" required>
-        <input type="text" name="subject" placeholder="Subject">
-        <textarea name="Comment" cols="80" rows="15" placeholder="Describe your project in detail..."></textarea>
+        <input class="form__element" type="text" name="name" placeholder="Name (Required)" required>
+        <input class="form__element" type="email" name="email" placeholder="Email (Required)" required>
+        <input class="form__element" type="text" name="subject" placeholder="Subject">
+        <textarea class="form__element form__element_textarea" name="Comment" placeholder="Describe your project in detail..."></textarea>
       </form>
 
       <section class="contacts__contact-info">
-        <h3>Contact Information</h3>
-        <p>
+        <h3 class="contacts__contact-title">Contact Information</h3>
+        <p class="contacts__contact-paragraph">
           Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae
           aliquam tellus. Proin sit amet volutpat libero. Nulla sed nunc et tortor luctus
           faucibus. Morbi at aliquet turpis, et consequat felis.
         </p>
-        <ul>
-          <li>Elm St. 14/05 Lost City</li>
-          <li>03528 331 86 35</li>
-          <li>info@singolo.com</li>
+        <ul class="contacts__contact-adress">
+          <li class="contacts__contact-adress_location">Elm St. 14/05 Lost City</li>
+          <li class="contacts__contact-adress_phone">03528 331 86 35</li>
+          <li class="contacts__contact-adress_email">info@singolo.com</li>
         </ul>
       </section>
     </div>
@@ -50,7 +50,7 @@
 
   <footer class="footer wrapper">
     <h2 class="visually-hidden">our social networks</h2>
-    <span>copyright 2019</span>
+    <span>(C) copyright 2019</span>
     <ul class="team__contacts footer__contacts">
       <li>
         <a class="link link_contacts link_contacts-facebook" href="#"><span

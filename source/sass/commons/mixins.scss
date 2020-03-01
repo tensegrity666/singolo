@@ -33,3 +33,13 @@
   transition: 0.2s linear;
   transform: translateY(-1px);
 }
+
+@mixin icon-contacts {
+  position: absolute;
+  display: block;
+  width: 12px;
+  height: 12px;
+  content: "";
+  background-repeat: no-repeat;
+  background-position: center;
+}

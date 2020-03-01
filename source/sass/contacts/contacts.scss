@@ -2,6 +2,7 @@
   @include section-vertical-paddings;
 
   background-color: $accent-color;
+  box-shadow: inset 0 -6px 0 0 #ea676b;;
 
   &__title {
     @include title;
@@ -25,7 +26,54 @@
   }
 
   &__contact-info {
-
     padding-left: 20px;
+  }
+
+  &__contact-title {
+    @include title;
+
+    margin-bottom: 12px;
+    font-size: 18px;
+    line-height: 1.1;
+    color: #f0d8d9;
+  }
+
+  &__contact-paragraph {
+    margin-bottom: 30px;
+    font-size: 12px;
+    line-height: 1.6;
+    color: #f0d8d9;
+  }
+
+  &__contact-adress {
+    @include reset-list;
+
+    position: relative;
+    padding-left: 25px;
+    color: #f0d8d9;
+
+    &_location::before {
+      @include icon-contacts;
+
+      top: 3px;
+      left: 5px;
+      background-image: url("/../assets/images/icons/location-contacts.png");
+    }
+
+    &_phone::before {
+      @include icon-contacts;
+
+      top: 25px;
+      left: 5px;
+      background-image: url("/../assets/images/icons/phone-contacts.png");
+    }
+
+    &_email::before {
+      @include icon-contacts;
+
+      top: 45px;
+      left: 5px;
+      background-image: url("/../assets/images/icons/mail-contacts.png");
+    }
   }
 }

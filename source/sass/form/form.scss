@@ -1,4 +1,35 @@
 .form {
   display: flex;
   flex-direction: column;
+
+  &__element {
+    box-sizing: border-box;
+    padding: 13px 15px;
+    margin-bottom: 16px;
+    font-size: 12px;
+    font-weight: 400;
+    color: $font-color-main;
+    background-color: #d6564f;
+    border: 2px solid transparent;
+    border-radius: 6px;
+    outline: none;
+    transition: $transition;
+
+    &::placeholder {
+      color: $services-background-color;
+      opacity: 0.4;
+    }
+
+    &:hover,
+    &:focus {
+      border: 2px solid $services-background-color;
+      transition: $transition;
+    }
+
+    &_textarea {
+      width: 619px;
+      height: 202px;
+      resize: none;
+    }
+  }
 }

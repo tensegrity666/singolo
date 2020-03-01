@@ -14,7 +14,6 @@ const postcss = require('gulp-postcss');
 const autoprefixer = require('autoprefixer');
 const del = require('del');
 const concat = require('gulp-concat');
-const gzip = require('gulp-gzip');
 const imagemin = require('gulp-imagemin');
 const sourcemap = require('gulp-sourcemaps');
 
@@ -38,7 +37,6 @@ function style() {
     .pipe(postcss([autoprefixer()]))
     .pipe(dest('build/css/'))
     .pipe(csso())
-    .pipe(gzip())
     .pipe(sourcemap.write('.'))
     .pipe(dest('build/css/'))
     .pipe(browserSync.stream());
@@ -97,12 +95,6 @@ function html() {
     .pipe(dest('build/'));
 };
 
-// .pipe(gzip({
-//     //   threshold: true,
-//     //   deleteMode: 'build/',
-//     //   skipGrowingFiles: true
-//     // }))
-
 function refresh(done) {
   browserSync.reload();
   done();
@@ -113,7 +105,6 @@ function jsmin() {
     .pipe(plumber([errorHandler()]))
     .pipe(concat('bundle.js'))
     .pipe(terser())
-    .pipe(gzip({ skipGrowingFiles: true }))
     .pipe(gulp.dest('build/scripts/'))
     .pipe(browserSync.stream());
 };
