@@ -1,8 +1,5 @@
 .link {
-  color: $font-color-main;
-  text-decoration: none;
-  cursor: pointer;
-  transition: $transition;
+  @include reset-link;
 
   &:not([href]),
   &:not([href]):hover {

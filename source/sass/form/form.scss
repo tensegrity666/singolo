@@ -4,20 +4,21 @@
 
   &__element {
     box-sizing: border-box;
-    padding: 13px 15px;
+    height: 38px;
+    padding: 10px 12px;
     margin-bottom: 16px;
     font-size: 12px;
     font-weight: 400;
     color: $font-color-main;
     background-color: #d6564f;
     border: 2px solid transparent;
-    border-radius: 6px;
+    border-radius: 5px;
     outline: none;
     transition: $transition;
 
     &::placeholder {
       color: $services-background-color;
-      opacity: 0.4;
+      opacity: 0.5;
     }
 
     &:hover,
