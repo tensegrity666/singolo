@@ -15,6 +15,7 @@
 
 <body class="page">
   <h1 class="visually-hidden">singolo. we create design.</h1>
+
   <header class="header__main wrapper">
     <ul class="logo">
       <li class="logo__item">
@@ -47,7 +48,7 @@
           </a>
         </li>
         <li class="navigation-main__item">
-          <a class="navigation-main__item-link link" href="#">
+          <a class="navigation-main__item-link link" href="#cont">
             contact
           </a>
         </li>
@@ -129,7 +130,6 @@
     </section>
 
     <section class="portfolio wrapper" id="portfl">
-
       <h2 class="portfolio__title">portfolio</h2>
       <p class="portfolio__paragraph">
         Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget
@@ -236,9 +236,7 @@
         </li>
 
         <li class="team__person">
-
           <img src="./build/assets/images/team/photo-3.png" width="300" height="300"
-
             alt="Scolara Visari">
           <h3 class="team__person-title">Scolara Visari</h3>
           <p class="team__person-paragraph">
@@ -267,7 +265,82 @@
         </li>
       </ul>
     </section>
+
+    <section class="contacts wrapper" id="cont">
+      <h2 class="contacts__title">Get a Quote</h2>
+      <p class="contacts__paragraph">
+        Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis
+        mollis,
+        non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec
+        elit.
+        Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.
+      </p>
+      <div class="contacts__container">
+        <form class="contacts__form form" action="https://echo.htmlacademy.ru"
+          method="post">
+          <input class="form__element" type="text" name="name"
+            placeholder="Name (Required)" maxlength="40" required="">
+          <input class="form__element" type="email" name="email"
+            placeholder="Email (Required)" required="">
+          <input class="form__element" type="text" name="subject"
+            placeholder="Subject">
+          <textarea class="form__element form__element_textarea" name="Comment"
+            placeholder="Describe your project in detail..."></textarea>
+          <button class="form__element form__element_button"
+            type="submit">send</button>
+        </form>
+
+        <section class="contacts__contact-info">
+          <h3 class="contacts__contact-title">Contact Information</h3>
+          <p class="contacts__contact-paragraph">
+            Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce
+            vitae
+            aliquam tellus. Proin sit amet volutpat libero. Nulla sed nunc et tortor
+            luctus
+            faucibus. Morbi at aliquet turpis, et consequat felis.
+          </p>
+          <ul class="contacts__contact-adress">
+            <li class="contacts__contact-adress_location">
+              <a class="contacts__contact-adress_link" href="http://map.google.com"
+                target="_blank" rel="noopener noreferrer">Elm St. 14/05 Lost
+                City</a>
+            </li>
+            <li class="contacts__contact-adress_phone">
+              <a class="contacts__contact-adress_link"
+                href="tel:+03528 331 86 35">03528 331 86 35</a>
+            </li>
+            <li class="contacts__contact-adress_email">
+              <a class="contacts__contact-adress_link"
+                href="mailto:info@singolo.com">info@singolo.com</a>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </section>
   </main>
+
+  <footer class="footer wrapper">
+    <h2 class="visually-hidden">our social networks</h2>
+    <span class="copyright">(C)copyright 2019 by TNSGRTY666</span>
+    <ul class="team__contacts footer__contacts">
+      <li>
+        <a class="link link_contacts link_contacts-facebook" href="#"><span
+            class="visually-hidden">Facebook</span></a>
+      </li>
+      <li>
+        <a class="link link_contacts link_contacts-google" href="#"><span
+            class="visually-hidden">Google+</span></a>
+      </li>
+      <li>
+        <a class="link link_contacts link_contacts-twitter" href="#"><span
+            class="visually-hidden">Twitter</span></a>
+      </li>
+      <li>
+        <a class="link link_contacts link_contacts-linkedin" href="#"><span
+            class="visually-hidden">Linkedin</span></a>
+      </li>
+    </ul>
+  </footer>
 
   <script> </script>
 </body>
