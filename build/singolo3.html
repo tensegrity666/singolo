@@ -23,11 +23,12 @@
     </p>
 
     <div class="contacts__container">
-      <form class="contacts__form form" action="" method="post">
-        <input class="form__element" type="text" name="name" placeholder="Name (Required)" required="">
+      <form class="contacts__form form" action="https://echo.htmlacademy.ru" method="post">
+        <input class="form__element" type="text" name="name" placeholder="Name (Required)" maxlength="40" required="">
         <input class="form__element" type="email" name="email" placeholder="Email (Required)" required="">
         <input class="form__element" type="text" name="subject" placeholder="Subject">
         <textarea class="form__element form__element_textarea" name="Comment" placeholder="Describe your project in detail..."></textarea>
+        <button class="form__element form__element_button" type="submit">send</button>
       </form>
 
       <section class="contacts__contact-info">

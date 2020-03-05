@@ -11,10 +11,6 @@
     padding-right: 40px;
     transition: 0.1s linear;
 
-    &:hover::before {
-      @include interactive;
-    }
-
     &::before {
       position: absolute;
       top: 0;
@@ -27,6 +23,10 @@
       background-position: center;
       border: 1px solid $services-title-color;
       border-radius: 50%;
+    }
+
+    &:hover::before {
+      @include interactive;
     }
 
     &-facebook::before {

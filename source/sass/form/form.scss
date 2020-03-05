@@ -32,5 +32,27 @@
       height: 202px;
       resize: none;
     }
+
+    &_button {
+      position: absolute;
+      right: 40px;
+      bottom: 56px;
+      width: 300px;
+      min-width: 50px;
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: $accent-color;
+      text-transform: capitalize;
+      background-color: $font-color-main;
+      border: 2px solid $services-background-color;
+      outline: none;
+      opacity: 0.8;
+
+      &:hover,
+      &:focus {
+        opacity: 1;
+        transition: $transition;
+      }
+    }
   }
 }
