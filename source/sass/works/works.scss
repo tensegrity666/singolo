@@ -6,4 +6,8 @@
   max-height: calc(207px * 3);
   gap: $works-gap;
   overflow: hidden;
+
+  &__item {
+    @include reset-list;
+  }
 }
