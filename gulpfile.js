@@ -38,7 +38,6 @@ function style() {
     .pipe(postcss([autoprefixer()]))
     .pipe(dest('build/css/'))
     .pipe(csso())
-    .pipe(gzip())
     .pipe(sourcemap.write('.'))
     .pipe(dest('build/css/'))
     .pipe(browserSync.stream());
@@ -113,7 +112,6 @@ function jsmin() {
     .pipe(plumber([errorHandler()]))
     .pipe(concat('bundle.js'))
     .pipe(terser())
-    .pipe(gzip({ skipGrowingFiles: true }))
     .pipe(gulp.dest('build/scripts/'))
     .pipe(browserSync.stream());
 };
