@@ -54,27 +54,27 @@
     }
 
     &_design::before {
-      background-image: url("/assets/images/icons/pen.svg");
+      background-image: url("../assets/images/icons/pen.svg");
     }
 
     &_ideas::before {
-      background-image: url("/assets/images/icons/bulb.svg");
+      background-image: url("../assets/images/icons/bulb.svg");
     }
 
     &_love::before {
-      background-image: url("/assets/images/icons/heart.svg");
+      background-image: url("../assets/images/icons/heart.svg");
     }
 
     &_responsive::before {
-      background-image: url("/assets/images/icons/phone.svg");
+      background-image: url("../assets/images/icons/phone.svg");
     }
 
     &_support::before {
-      background-image: url("/assets/images/icons/bubble.svg");
+      background-image: url("../assets/images/icons/bubble.svg");
     }
 
     &_feeling::before {
-      background-image: url("/assets/images/icons/star.svg");
+      background-image: url("../assets/images/icons/star.svg");
     }
 
     &-title {
