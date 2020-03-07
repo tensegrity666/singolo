@@ -50,6 +50,7 @@
     font-size: 12px;
     line-height: 1.8;
     color: #f0d8d9;
+    text-align: justify;
   }
 
   &__contact-adress {
@@ -63,30 +64,37 @@
     &_location::before {
       @include icon-contacts;
 
-      top: 3px;
-      left: 0;
+      top: 4px;
+      left: 1px;
       background-image: url("/../assets/images/icons/location-contacts.png");
+    }
+
+    &_phone {
+      letter-spacing: 0.5px;
     }
 
     &_phone::before {
       @include icon-contacts;
 
-      top: 24px;
-      left: 0;
+      top: 25px;
+      left: 1px;
       background-image: url("/../assets/images/icons/phone-contacts.png");
     }
 
     &_email::before {
       @include icon-contacts;
 
-      top: 48px;
-      left: 0;
+      top: 49px;
+      left: 1px;
       background-image: url("/../assets/images/icons/mail-contacts.png");
     }
 
     &_link {
       @include reset-link;
 
+      font-size: 1.1rem;
+      font-weight: 600;
+      line-height: 2;
       opacity: 0.8;
 
       &:hover,
