@@ -10,4 +10,4 @@ _To view project on local machine__:
 * clone this repository;
 * checkout to gh_pages branch;
 * run ``npm i``;
-* then run ``gulp start``;
+* then run ``gulp start`` and open http://localhost:3000 in your browser;
