@@ -2,7 +2,7 @@
   @include section-vertical-paddings;
 
   position: relative;
-  padding-top: 49px;
+  padding-top: 47px;
   padding-bottom: 57px;
   background-color: $accent-color;
   box-shadow: inset 0 -6px 0 0 #ea676b;
@@ -67,7 +67,7 @@
 
       top: 4px;
       left: 1px;
-      background-image: url("../assets/images/icons/location-contacts.png");
+      background-image: url("/../assets/images/icons/location-contacts.png");
     }
 
     &_phone {
@@ -79,7 +79,7 @@
 
       top: 25px;
       left: 1px;
-      background-image: url("../assets/images/icons/phone-contacts.png");
+      background-image: url("/../assets/images/icons/phone-contacts.png");
     }
 
     &_email::before {
@@ -87,7 +87,7 @@
 
       top: 49px;
       left: 1px;
-      background-image: url("../assets/images/icons/mail-contacts.png");
+      background-image: url("/../assets/images/icons/mail-contacts.png");
     }
 
     &_link {
