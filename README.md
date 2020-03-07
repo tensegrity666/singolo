@@ -8,6 +8,6 @@ _To view all SCSS files, go to the directory source/sass/%blockname%_ __in gh_pa
 
 To view project on local machine:
 * clone this repository;
-* checkout to __gh_pages__ branch;
 * run ``npm i``;
+* checkout to __gh_pages__ branch;
 * then run ``gulp start`` and open http://localhost:3000 in your browser;
