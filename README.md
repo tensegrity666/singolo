@@ -3,10 +3,10 @@
 * _Tested in Chrome/IE11/Opera/Firefox/Safary(mobile)_
 * _Tested for "pixelperfect" in Chrome_
 
-
 _To view all SCSS files, go to the directory source/sass/%blockname%_ __in gh_pages branch__
 
-_To view project on local machine:__
+
+To view project on local machine:
 * clone this repository;
 * checkout to __gh_pages__ branch;
 * run ``npm i``;
