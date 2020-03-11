@@ -1,8 +1,8 @@
 .link {
   @include reset-link;
 
-  &:not([href]),
-  &:not([href]):hover {
+  &_active,
+  &_active:hover {
     color: $accent-color;
   }
 
