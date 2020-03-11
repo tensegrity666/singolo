@@ -19,7 +19,7 @@
   <header class="header__main wrapper">
     <ul class="logo">
       <li class="logo__item">
-        <a class="logo__item-link link" href="index.html">
+        <a class="logo__item-link link" href="index.html" tabindex="-1">
           singolo<span class="logo__link-star">*</span>
         </a>
       </li>
@@ -63,6 +63,9 @@
           <li class="slider__slide slider__slide_slide-1" aria-label="Illustration with two white Iphones on pink background">
             <div class="iphone iphone_vertical"></div>
             <div class="iphone iphone_horizontal"></div>
+          </li>
+          <li class="slider__slide slider__slide_slide-2" aria-label="Illustration with three white Iphones on blue background">
+            <div class="iphone iphone_vertical"></div>
           </li>
         </ul>
 
@@ -138,58 +141,58 @@
       </p>
 
       <ul class="portfolio__sort sort">
-        <li class="sort__item">all</li>
+        <li class="sort__item sort__item_active">all</li>
         <li class="sort__item">web design</li>
         <li class="sort__item">graphic design</li>
         <li class="sort__item">artwork</li>
       </ul>
 
       <ul class="works">
-        <li class="works__item">
-          <img src="./build/assets/images/portfolio/Project.png" width="220" height="187" alt="Boat with yellow sails">
+        <li class="works__item" tabindex="0" role="img" aria-label="Boat with yellow sails">
+          <img src="./build/assets/images/portfolio/Project.png" width="220" height="187" alt="">
         </li>
-        <li class="works__item">
-          <img src="./build/assets/images/portfolio/Project-2.png" width="220" height="187" alt="Circle green girl">
+        <li class="works__item" tabindex="0" role="img" aria-label="Circle green girl">
+          <img src="./build/assets/images/portfolio/Project-2.png" width="220" height="187" alt="">
         </li>
-        <li class="works__item">
+        <li class="works__item" tabindex="0" role="img" aria-label="Black-and-white graphics">
           <img src="./build/assets/images/portfolio/Layer_9.png" width="220" height="187"
-            alt="Black-and-white graphics">
+            alt="">
         </li>
-        <li class="works__item">
+        <li class="works__item" tabindex="0" role="img" aria-label="Golden robot with hearth  in his hand">
           <img src="./build/assets/images/portfolio/Project-3.png" width="220"
-            height="187" alt="Golden robot with hearth  in his hand">
+            height="187" alt="">
         </li>
-        <li class="works__item">
+        <li class="works__item" tabindex="0" role="img" aria-label="Stranger things">
           <img src="./build/assets/images/portfolio/Project-4.png" width="220"
-            height="187" alt="Stranger things">
+            height="187" alt="">
         </li>
-        <li class="works__item">
+        <li class="works__item" tabindex="0" role="img" aria-label="Colored plant">
           <img src="./build/assets/images/portfolio/Project-5.png" width="220"
-            height="187" alt="Colored plant">
+            height="187" alt="">
         </li>
-        <li class="works__item">
+        <li class="works__item" tabindex="0" role="img" aria-label="White, blue and red abstract graphics">
           <img src="./build/assets/images/portfolio/Layer_11.png" width="220" height="187"
-            alt="White, blue and red abstract graphics">
+            alt="">
         </li>
-        <li class="works__item">
+        <li class="works__item" tabindex="0" role="img" aria-label="Drawed hens with eggs">
           <img src="./build/assets/images/portfolio/Layer_8.png" width="220" height="187"
-            alt="Drawed hens with eggs">
+            alt="">
         </li>
-        <li class="works__item">
+        <li class="works__item" tabindex="0" role="img" aria-label="Green giant with tower on head">
           <img src="./build/assets/images/portfolio/Project-6.png" width="220"
-            height="187" alt="Green giant with tower on head">
+            height="187" alt="">
         </li>
-        <li class="works__item">
+        <li class="works__item" tabindex="0" role="img" aria-label="Words graphics">
           <img src="./build/assets/images/portfolio/Project-7.png" width="220"
-            height="187" alt="Words graphics">
+            height="187" alt="">
         </li>
-        <li class="works__item">
+        <li class="works__item" tabindex="0" role="img" aria-label="White troll">
           <img src="./build/assets/images/portfolio/Project-8.png" width="220"
-            height="187" alt="White troll">
+            height="187" alt="">
         </li>
-        <li class="works__item">
+        <li class="works__item" tabindex="0" role="img" aria-label="Something brown and broken glasses">
           <img src="./build/assets/images/portfolio/Project-9.png" width="220"
-            height="187" alt="Something brown and broken glasses">
+            height="187" alt="">
         </li>
       </ul>
     </section>
@@ -370,16 +373,8 @@
     </ul>
   </footer>
 
-  <script>
-    'Use strict';
 
-      const menu = document.querySelector('.navigation-main__list');
-      const tab = menu.querySelectorAll('.navigation-main__item-link');
 
-      menu.addEventListener('click', event => {
-        tab.forEach(element => element.classList.remove('link_active'));
-        event.target.classList.add('link_active');
-      });
   </script>
 </body>
 </html>
