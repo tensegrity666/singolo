@@ -28,7 +28,7 @@
       <h2 class="visually-hidden">site navigation</h2>
       <ul class="navigation-main__list">
         <li class="navigation-main__item">
-          <a class="navigation-main__item-link link">
+          <a class="navigation-main__item-link link link_active" href="#">
             home
           </a>
         </li>
@@ -370,6 +370,16 @@
     </ul>
   </footer>
 
-  <script> </script>
+  <script>
+    'Use strict';
+
+      const menu = document.querySelector('.navigation-main__list');
+      const tab = menu.querySelectorAll('.navigation-main__item-link');
+
+      menu.addEventListener('click', event => {
+        tab.forEach(element => element.classList.remove('link_active'));
+        event.target.classList.add('link_active');
+      });
+  </script>
 </body>
 </html>
