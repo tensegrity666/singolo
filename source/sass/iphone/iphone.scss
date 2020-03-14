@@ -6,6 +6,12 @@
   background-image: url("../assets/images/iphone/iPhone_Vertical.svg");
   background-repeat: no-repeat;
 
+  &_three-phones {
+    background-image: url("../assets/images/slider/Slide-2.svg");
+    width: 920px;
+    height: 590px;
+  }
+
   &_vertical {
     top: 53px;
     left: 112px;
