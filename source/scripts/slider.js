@@ -1,5 +1,3 @@
-'Use strict';
-
 const controls = document.querySelector('.controls__list');
 const controlArrows = controls.querySelectorAll('.controls__list_control');
 const controlArrowNext = document.getElementById('next');
@@ -8,18 +6,25 @@ const background = document.querySelector('.slider');
 const slider = background.querySelector('.slider__gallery');
 const slides = slider.querySelectorAll('.slider__slide');
 
-const currentSlide = 0;
+export const arrows = () => {
+  controlArrowNext.addEventListener('click', () => {
 
-const changeCurrentSlide = n => {
-  currentSlide = (n + slides.length) % slides.length;
-}
+    slides.forEach(element => {
+      element.classList.toggle('slider_hide');
+    })
 
-controlArrowNext.addEventListener('click', () => {
+    background.classList.toggle('slider_background-blue');
+    controlArrows.forEach(element => element.classList.toggle('slider__control_blue'));
+  });
+
+
+controlArrowPrevious.addEventListener('click', () => {
 
   slides.forEach(element => {
-    element.classList.toggle('slider__slide_to-right');
+    element.classList.toggle('slider_hide');
   })
 
   background.classList.toggle('slider_background-blue');
   controlArrows.forEach(element => element.classList.toggle('slider__control_blue'));
 });
+}
