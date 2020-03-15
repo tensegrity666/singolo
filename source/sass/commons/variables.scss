@@ -2,11 +2,13 @@ $font: "Lato", sans-serif;
 $width: 1020px;
 $transition: all 0.2s linear;
 $transition-gallery: all 0.3s ease-in-out;
+$scroll-width: 1.5rem;
 
 $accent-color: #f06c64;
 $second-slide-color: #648BF0;
 $default-color: #000000;
 $wrapper-shadow: 0 1px 3px 0 rgba(50, 55, 70, 0.7);
+$button-color: #FBC65F;
 
 $wrapper-padding: 4rem;
 
@@ -39,3 +41,6 @@ $works-item-height: 187px;
 $works-gap: 20px;
 
 $social-icon-size: 30px;
+
+$modal-width: 600px;
+$modal-height: 400px;
