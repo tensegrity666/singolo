@@ -50,9 +50,13 @@
     }
   }
 
-  &__control_blue,
-  &__control_blue:hover {
+  &__control_blue {
     filter: grayscale(1);
+    transition: $transition;
+  }
+
+  &__control_blue:hover {
+    box-shadow: inset 10px 0 20px -15px rgb(50, 55, 70);
     transition: $transition;
   }
 
