@@ -2,7 +2,6 @@
   font-size: 2rem;
   font-weight: bold;
   color: $font-color-main;
-  transition: 1s linear;
 
   &__wrapper {
     position: fixed;
@@ -16,12 +15,11 @@
     visibility: hidden;
     box-shadow: inset 20px -10px 150px 120px rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(2px) saturate(0.8);
-    transition: 1s linear;
 
     &_show {
       visibility: visible;
       opacity: 1;
-      transition: 1s linear;
+      transition: 0.3s linear;
     }
   }
 
@@ -39,7 +37,6 @@
     border-radius: 5px;
     box-shadow: 0 20px 25px 10px rgba(50, 50, 50, 0.5);
     opacity: 0;
-    transition: 0.3s linear;
 
     &_show {
       visibility: visible;
@@ -49,6 +46,55 @@
 
     &_list {
       @include reset-list;
+
+      padding-right: 4rem;
+    }
+
+    &_message {
+      width: 530px;
+      height: 230px;
+      overflow-y: auto;
+      line-height: 1.5;
+      word-wrap: break-word;
+    }
+  }
+
+  &__close {
+    position: absolute;
+    top: 2rem;
+    right: 2.5rem;
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+    background-color: $button-color;
+    border: 2px solid $button-color;
+    border-radius: 0.7rem;
+    outline: none;
+
+    &::before,
+    &::after {
+      position: absolute;
+      top: 12px;
+      left: 4px;
+      width: 19px;
+      height: 3px;
+      content: "";
+      background-color: $services-title-color;
+      border-radius: 1px;
+    }
+
+    &::before {
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+
+    &:hover,
+    &:focus {
+      border-color: $services-background-color;
+      transition: $transition;
     }
   }
 }
