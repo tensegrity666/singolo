@@ -6,9 +6,20 @@
   background-image: url("../assets/images/iphone/iPhone_Vertical.svg");
   background-repeat: no-repeat;
 
+  &_three-phones {
+    top: 5px;
+    left: 112px;
+    width: 800px;
+    height: 100%;
+    background-image: url("../assets/images/slider/Slide-2.svg");
+    background-position: center;
+  }
+
   &_vertical {
     top: 53px;
     left: 112px;
+    cursor: pointer;
+    transition: background 0.4s ease-in;
 
     &::after {
       position: absolute;
@@ -19,17 +30,24 @@
       width: $iphone-width;
       height: $iphone-height;
       content: "";
+      background: rgba(128, 128, 128, 0.1);
       background-image: url("../assets/images/iphone/Layer_6.jpg");
       background-repeat: no-repeat;
       background-position: center;
       border: $iphone-border;
       border-radius: 3px;
     }
+
+    &-off::after {
+      background: rgba(0, 0, 0, 1);
+      background-image: linear-gradient(to right, #1f1c1a 0.1%, #000000 99.99%);
+    }
   }
 
   &_horizontal {
     top: 53px;
     right: 258px;
+    cursor: pointer;
     transform: rotate(90deg);
 
     &::after {
@@ -41,12 +59,18 @@
       width: $iphone-height;
       height: $iphone-width;
       content: "";
+      background: rgba(128, 128, 128, 0.1);
       background-image: url("../assets/images/iphone/Layer_5.jpg");
       background-repeat: no-repeat;
       background-position: center;
       border: $iphone-border;
       border-radius: 3px;
       transform: rotate(-90deg);
+    }
+
+    &-off::after {
+      background: rgba(0, 0, 0, 1);
+      background-image: linear-gradient(to right, #1f1c1a 0.1%, #000000 99.99%);
     }
   }
 }

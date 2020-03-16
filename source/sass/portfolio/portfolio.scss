@@ -24,7 +24,7 @@
 
     display: grid;
     grid-template-rows: 24px;
-    grid-template-columns: 29px 78px 93px 57px;
+    grid-template-columns: repeat(4, auto);
     justify-content: start;
     gap: 10px;
     margin-bottom: 19px;

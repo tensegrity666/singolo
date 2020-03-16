@@ -1,8 +1,11 @@
 .link {
   @include reset-link;
 
-  &:not([href]),
-  &:not([href]):hover {
+  outline: none;
+
+  &:focus,
+  &_active,
+  &_active:hover {
     color: $accent-color;
   }
 
@@ -25,6 +28,7 @@
       border-radius: 50%;
     }
 
+    &:focus::before,
     &:hover::before {
       @include interactive;
     }

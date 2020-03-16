@@ -1,6 +1,6 @@
 .page {
   &::-webkit-scrollbar {
-    width: 1.5rem;
+    width: $scroll-width;
   }
 
   &::-webkit-scrollbar-track {

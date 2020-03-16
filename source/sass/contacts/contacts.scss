@@ -22,6 +22,7 @@
     margin-bottom: 42px;
     line-height: 3.15rem;
     color: #f0d8d9;
+    text-align: justify;
   }
 
   &__container {
@@ -59,13 +60,12 @@
 
     position: relative;
     padding-left: 23px;
-    line-height: 2.15;
     color: #f0d8d9;
 
     &_location::before {
       @include icon-contacts;
 
-      top: 4px;
+      top: 5px;
       left: 1px;
       background-image: url("../assets/images/icons/location-contacts.png");
     }
@@ -77,7 +77,7 @@
     &_phone::before {
       @include icon-contacts;
 
-      top: 25px;
+      top: 27px;
       left: 1px;
       background-image: url("../assets/images/icons/phone-contacts.png");
     }
@@ -93,9 +93,8 @@
     &_link {
       @include reset-link;
 
-      font-size: 1.1rem;
+      font-size: 11px;
       font-weight: 600;
-      line-height: 2;
       opacity: 0.8;
 
       &:hover,

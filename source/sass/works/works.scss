@@ -11,5 +11,14 @@
 
   &__item {
     list-style: none;
+    cursor: pointer;
+    outline: none;
+    transition: $transition;
+
+    &:focus {
+      outline: 5px solid #f06c64;
+      outline-offset: -5px;
+      transition: $transition;
+    }
   }
 }

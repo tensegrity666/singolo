@@ -19,7 +19,7 @@
   <header class="header__main wrapper">
     <ul class="logo">
       <li class="logo__item">
-        <a class="logo__item-link link" href="index.html">
+        <a class="logo__item-link link" href="index.html" tabindex="-1">
           singolo<span class="logo__link-star">*</span>
         </a>
       </li>
@@ -28,7 +28,7 @@
       <h2 class="visually-hidden">site navigation</h2>
       <ul class="navigation-main__list">
         <li class="navigation-main__item">
-          <a class="navigation-main__item-link link">
+          <a class="navigation-main__item-link link link_active" href="#">
             home
           </a>
         </li>
@@ -43,12 +43,12 @@
           </a>
         </li>
         <li class="navigation-main__item">
-          <a class="navigation-main__item-link link" href="#bout">
+          <a class="navigation-main__item-link link" href="#about">
             about
           </a>
         </li>
         <li class="navigation-main__item">
-          <a class="navigation-main__item-link link" href="#cont">
+          <a class="navigation-main__item-link link" href="#contcts">
             contact
           </a>
         </li>
@@ -57,12 +57,15 @@
   </header>
 
   <main>
-    <section class="slider">
+    <section class="slider slider_background-red">
       <h2 class="visually-hidden">gallery of products</h2>
         <ul class="slider__gallery">
           <li class="slider__slide slider__slide_slide-1" aria-label="Illustration with two white Iphones on pink background">
             <div class="iphone iphone_vertical"></div>
             <div class="iphone iphone_horizontal"></div>
+          </li>
+          <li class="slider__slide slider__slide_slide-2 slider_hide" aria-label="Illustration with three white Iphones on blue background">
+            <div class="iphone iphone_three-phones"></div>
           </li>
         </ul>
 
@@ -138,63 +141,63 @@
       </p>
 
       <ul class="portfolio__sort sort">
-        <li class="sort__item">all</li>
+        <li class="sort__item sort__item_active">all</li>
         <li class="sort__item">web design</li>
         <li class="sort__item">graphic design</li>
         <li class="sort__item">artwork</li>
       </ul>
 
       <ul class="works">
-        <li class="works__item">
-          <img src="./build/assets/images/portfolio/Project.png" width="220" height="187" alt="Boat with yellow sails">
+        <li class="works__item" tabindex="0" role="img" aria-label="Boat with yellow sails">
+          <img src="./build/assets/images/portfolio/Project.png" width="220" height="187" alt="">
         </li>
-        <li class="works__item">
-          <img src="./build/assets/images/portfolio/Project-2.png" width="220" height="187" alt="Circle green girl">
+        <li class="works__item" tabindex="0" role="img" aria-label="Circle green girl">
+          <img src="./build/assets/images/portfolio/Project-2.png" width="220" height="187" alt="">
         </li>
-        <li class="works__item">
+        <li class="works__item" tabindex="0" role="img" aria-label="Black-and-white graphics">
           <img src="./build/assets/images/portfolio/Layer_9.png" width="220" height="187"
-            alt="Black-and-white graphics">
+            alt="">
         </li>
-        <li class="works__item">
+        <li class="works__item" tabindex="0" role="img" aria-label="Golden robot with hearth  in his hand">
           <img src="./build/assets/images/portfolio/Project-3.png" width="220"
-            height="187" alt="Golden robot with hearth  in his hand">
+            height="187" alt="">
         </li>
-        <li class="works__item">
+        <li class="works__item" tabindex="0" role="img" aria-label="Stranger things">
           <img src="./build/assets/images/portfolio/Project-4.png" width="220"
-            height="187" alt="Stranger things">
+            height="187" alt="">
         </li>
-        <li class="works__item">
+        <li class="works__item" tabindex="0" role="img" aria-label="Colored plant">
           <img src="./build/assets/images/portfolio/Project-5.png" width="220"
-            height="187" alt="Colored plant">
+            height="187" alt="">
         </li>
-        <li class="works__item">
+        <li class="works__item" tabindex="0" role="img" aria-label="White, blue and red abstract graphics">
           <img src="./build/assets/images/portfolio/Layer_11.png" width="220" height="187"
-            alt="White, blue and red abstract graphics">
+            alt="">
         </li>
-        <li class="works__item">
+        <li class="works__item" tabindex="0" role="img" aria-label="Drawed hens with eggs">
           <img src="./build/assets/images/portfolio/Layer_8.png" width="220" height="187"
-            alt="Drawed hens with eggs">
+            alt="">
         </li>
-        <li class="works__item">
+        <li class="works__item" tabindex="0" role="img" aria-label="Green giant with tower on head">
           <img src="./build/assets/images/portfolio/Project-6.png" width="220"
-            height="187" alt="Green giant with tower on head">
+            height="187" alt="">
         </li>
-        <li class="works__item">
+        <li class="works__item" tabindex="0" role="img" aria-label="Words graphics">
           <img src="./build/assets/images/portfolio/Project-7.png" width="220"
-            height="187" alt="Words graphics">
+            height="187" alt="">
         </li>
-        <li class="works__item">
+        <li class="works__item" tabindex="0" role="img" aria-label="White troll">
           <img src="./build/assets/images/portfolio/Project-8.png" width="220"
-            height="187" alt="White troll">
+            height="187" alt="">
         </li>
-        <li class="works__item">
+        <li class="works__item" tabindex="0" role="img" aria-label="Something brown and broken glasses">
           <img src="./build/assets/images/portfolio/Project-9.png" width="220"
-            height="187" alt="Something brown and broken glasses">
+            height="187" alt="">
         </li>
       </ul>
     </section>
 
-    <section class="team wrapper" id="bout">
+    <section class="team wrapper" id="about">
       <h2 class="team__title">about us</h2>
       <p class="team__paragraph">
         Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis
@@ -293,7 +296,7 @@
       </ul>
     </section>
 
-    <section class="contacts wrapper" id="cont">
+    <section class="contacts wrapper" id="contcts">
       <h2 class="contacts__title">Get a Quote</h2>
       <p class="contacts__paragraph">
         Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis
@@ -303,18 +306,17 @@
         Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.
       </p>
       <div class="contacts__container">
-        <form class="contacts__form form" action="https://echo.htmlacademy.ru"
-          method="post">
+        <form class="contacts__form form">
           <input class="form__element" type="text" name="name"
-            placeholder="Name (Required)" maxlength="40" required="">
+            placeholder="Name (Required)" pattern="[A-Za-z0-9\s]{1,20}" required="" id="Name">
           <input class="form__element" type="email" name="email"
-            placeholder="Email (Required)" required="">
+            placeholder="Email (Required)" required="" id="Email">
           <input class="form__element" type="text" name="subject"
-            placeholder="Subject">
+            placeholder="Subject" id="Subject" maxlength="40">
           <textarea class="form__element form__element_textarea" name="Comment"
-            placeholder="Describe your project in detail..."></textarea>
+            placeholder="Describe your project in detail..." id="Comment"></textarea>
           <button class="form__element form__element_button"
-            type="submit">send</button>
+            type="submit" id="submit-button">send</button>
         </form>
 
         <section class="contacts__contact-info">
@@ -370,6 +372,17 @@
     </ul>
   </footer>
 
-  <script> </script>
+<div class="modal modal__wrapper">
+  <div class="modal modal__content">
+    <ul class="modal__content_list">
+      <li class="modal__content_title" id="Succes"></li>
+      <li id="subjectContent"></li>
+      <li class="modal__content_message" id="commentContent"></li>
+    </ul>
+    <button class="modal__close" type="button">ok</button>
+  </div>
+</div>
+
+<script src="./source/scripts/script.js" type="module"></script>
 </body>
 </html>

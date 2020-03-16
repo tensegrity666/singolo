@@ -2,4 +2,10 @@
   width: $width;
   margin: 0 auto;
   box-shadow: $wrapper-shadow;
+
+  &_noscroll {
+    padding-right: $scroll-width;
+    overflow: hidden;
+    box-shadow: none;
+  }
 }

@@ -1,12 +1,18 @@
 .header {
   &__main {
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 1021px;
     min-height: $header-height;
+    margin: 0 (($screen-width - $width - $scroll-width) / 2);
     color: $font-color-main;
     background-color: $background-color-header;
-    box-shadow: $bottom-line;
+    box-shadow: $bottom-line, 0 -2px 10px 1px rgba(0, 0, 0, 0.6);
+    opacity: 0.97;
   }
 }
