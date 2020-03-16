@@ -306,7 +306,7 @@
         Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.
       </p>
       <div class="contacts__container">
-        <form class="contacts__form form" method="post">
+        <form class="contacts__form form">
           <input class="form__element" type="text" name="name"
             placeholder="Name (Required)" pattern="[A-Za-z0-9\s]{1,20}" required="" id="Name">
           <input class="form__element" type="email" name="email"
@@ -375,13 +375,11 @@
 <div class="modal modal__wrapper">
   <div class="modal modal__content">
     <ul class="modal__content_list">
-      <li id="nameContent">Name</li>
-      <li id="emailContent">email</li>
-      <li id="subjectContent">subject</li>
-      <li class="modal__content_message" id="commentContent">message</li>
+      <li class="modal__content_title" id="Succes"></li>
+      <li id="subjectContent"></li>
+      <li class="modal__content_message" id="commentContent"></li>
     </ul>
-    <button class="modal__close" type="button"><span
-        class="visually-hidden">Закрыть</span></button>
+    <button class="modal__close" type="button">ok</button>
   </div>
 </div>
 

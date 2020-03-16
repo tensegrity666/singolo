@@ -34,7 +34,6 @@ const isValid = () => {
       noScroll();
       show();
       dataToModal();
-      form.submit();
     }
   });
 }
@@ -45,14 +44,12 @@ const email = form.querySelector('#Email');
 const subject = form.querySelector('#Subject');
 const comment = form.querySelector('#Comment');
 
-const nameContent = document.querySelector('#nameContent');
-const emailContent = document.querySelector('#emailContent');
+const success = document.querySelector('#Succes');
 const subjectContent = document.querySelector('#subjectContent');
 const commentContent = document.querySelector('#commentContent');
 
 const dataToModal = () => {
-  nameContent.innerText = `Name: ${name.value}`;
-  emailContent.innerText = `E-mail: ${email.value}`;
-  subjectContent.innerText = `Title: ${subject.value}`;
-  commentContent.innerText = `Message: ${comment.value}`;
+  success.innerText = `The letter was sent`;
+  subject.value ? subjectContent.innerText = `Title: ${subject.value}` : subjectContent.innerText = `Without subject`;
+  comment.value ? commentContent.innerText = `Message: ${comment.value}` : commentContent.innerText = `Without description`;
 }
