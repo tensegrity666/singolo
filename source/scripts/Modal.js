@@ -50,6 +50,6 @@ const commentContent = document.querySelector('#commentContent');
 
 const dataToModal = () => {
   success.innerText = `The letter was sent`;
-  subject.value ? subjectContent.innerText = `Title: ${subject.value}` : subjectContent.innerText = `Without subject`;
-  comment.value ? commentContent.innerText = `Message: ${comment.value}` : commentContent.innerText = `Without description`;
+  subject.value ? subjectContent.innerText = `Subject: ${subject.value}` : subjectContent.innerText = `Without subject`;
+  comment.value ? commentContent.innerText = `Description: ${comment.value}` : commentContent.innerText = `Without description`;
 }
