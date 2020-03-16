@@ -68,12 +68,6 @@
     box-shadow: inset 10px 0 20px -15px rgba(50, 55, 70, 0.8);
   }
 
-  &__control_blue,
-  &__control_blue:hover {
-    filter: grayscale(1);
-    transition: $transition;
-  }
-
   &__control_blue:focus {
     filter: grayscale(0.5);
     transition: $transition;
