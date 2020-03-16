@@ -18,7 +18,11 @@
     background-color: transparent;
     background-repeat: no-repeat;
     border: none;
-    outline: none;
     transition: $transition;
+
+    &:focus {
+      outline: 1px dotted rgba(128, 128, 128, 0.2);
+      transition: $transition;
+    }
   }
 }
