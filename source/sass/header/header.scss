@@ -1,12 +1,16 @@
 .header {
   &__main {
-    position: relative;
+    position: fixed;
+    top: 0;
+    z-index: 99;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: $width;
     min-height: $header-height;
     color: $font-color-main;
     background-color: $background-color-header;
-    box-shadow: $bottom-line, 0 -2px 10px 1px rgba(0, 0, 0, 0.6);
+    box-shadow: $bottom-line, 0 -2px 10px 1px rgba(0, 0, 0, 0.3);
+    opacity: 0.97;
   }
 }

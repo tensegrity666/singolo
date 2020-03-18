@@ -13,7 +13,7 @@
     list-style: none;
     cursor: pointer;
     outline: none;
-    transition: $transition;
+    transition: top 2s linear;
 
     &:focus {
       outline: 5px solid #f06c64;
