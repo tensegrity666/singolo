@@ -1,0 +1,24 @@
+.sort {
+  &__item {
+    padding: 6px 3px;
+    line-height: 1rem;
+    text-align: center;
+    text-transform: capitalize;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid $services-item-color;
+    border-radius: 6px;
+    transition: $transition;
+
+    &_active {
+      color: #bbbbbb;
+      border-color: #bbbbbb;
+      transition: $transition;
+    }
+
+    &:hover {
+      border-color: #bbbbbb;
+      box-shadow: inset 0 0 1px 1px rgba(187, 187, 187, 0.6);
+    }
+  }
+}

@@ -1,0 +1,52 @@
+@mixin reset-link {
+  color: $font-color-main;
+  text-decoration: none;
+  cursor: pointer;
+  transition: $transition;
+}
+
+@mixin reset-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+@mixin section-vertical-paddings {
+  padding-top: 47px;
+  padding-bottom: 73px;
+}
+
+@mixin paragraph {
+  margin: 0;
+  font-size: 1.72rem;
+  font-weight: 300;
+  line-height: 3rem;
+  color: $services-item-color;
+  text-align: start;
+}
+
+@mixin title {
+  margin: 0;
+  font-size: 3rem;
+  font-weight: 900;
+  color: $services-title-color;
+  text-align: start;
+  text-transform: capitalize;
+}
+
+@mixin interactive {
+  cursor: pointer;
+  box-shadow: 0 3px 3px 1px rgba(0, 0, 0, 0.3);
+  transition: 0.2s linear;
+  transform: translateY(-1px);
+}
+
+@mixin icon-contacts {
+  position: absolute;
+  display: block;
+  width: 12px;
+  height: 12px;
+  content: "";
+  background-repeat: no-repeat;
+  background-position: center;
+}

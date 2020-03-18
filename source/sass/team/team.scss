@@ -1,0 +1,66 @@
+.team {
+  @include section-vertical-paddings;
+
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 90px;
+  background-color: $services-background-color;
+  box-shadow: inset 0 -6px 0 0 #ffffff;
+
+  &__title {
+    @include title;
+
+    margin-bottom: 5px;
+    line-height: 2.05;
+    letter-spacing: -0.1px;
+  }
+
+  &__paragraph {
+    @include paragraph;
+
+    margin-bottom: 41px;
+    line-height: 3.2rem;
+    text-align: justify;
+  }
+
+  &__members {
+    @include reset-list;
+
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    justify-content: space-between;
+    color: $services-item-color;
+  }
+
+  &__person {
+    display: flex;
+    flex-direction: column;
+
+    &-title {
+      @include title;
+
+      padding-top: 15px;
+      padding-bottom: 6px;
+      font-size: 1.8rem;
+      line-height: 1.3;
+      letter-spacing: -0.1px;
+    }
+
+    &-paragraph {
+      @include paragraph;
+
+      padding-bottom: 20px;
+      font-size: 1.2rem;
+      font-weight: 400;
+      line-height: 1.8;
+      text-align: justify;
+    }
+  }
+
+  &__contacts {
+    @include reset-list;
+
+    display: flex;
+    justify-content: start;
+  }
+}

@@ -1,0 +1,30 @@
+.controls__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  &_control {
+    z-index: 99;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: $slider-control-width;
+    height: $slider-control-height;
+    padding: 0;
+    cursor: pointer;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    outline: none;
+    transition: $transition;
+
+    &:focus {
+      outline: 1px dotted rgba(128, 128, 128, 0.2);
+      transition: $transition;
+    }
+  }
+}

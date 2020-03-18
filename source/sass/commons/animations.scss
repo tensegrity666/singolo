@@ -1,0 +1,59 @@
+.to-left {
+  animation: 0.5s ease-in-out;
+  animation-name: left;
+}
+
+.to-right {
+  animation: 0.5s ease-in-out;
+  animation-name: to-right;
+}
+
+.from-left {
+  animation: 0.5s ease-in-out;
+  animation-name: from-left;
+}
+
+.from-right {
+  animation: 0.5s ease-in-out;
+  animation-name: right;
+}
+
+@keyframes left {
+  from {
+    left: 0;
+  }
+
+  to {
+    left: -100%;
+  }
+}
+
+@keyframes from-left {
+  from {
+    left: -100%;
+  }
+
+  to {
+    left: 0;
+  }
+}
+
+@keyframes right {
+  from {
+    left: 100%;
+  }
+
+  to {
+    left: 0;
+  }
+}
+
+@keyframes to-right {
+  from {
+    left: 0;
+  }
+
+  to {
+    left: 100%;
+  }
+}
