@@ -11,6 +11,7 @@ export const modalShow = () => {
   close.addEventListener('click', () => {
     noScroll();
     hide();
+    form.reset();
   });
 
 const noScroll = () => {
