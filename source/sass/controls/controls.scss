@@ -7,6 +7,7 @@
   list-style: none;
 
   &_control {
+    z-index: 99;
     box-sizing: border-box;
     display: flex;
     align-items: center;

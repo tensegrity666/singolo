@@ -7,10 +7,11 @@
   background-repeat: no-repeat;
 
   &_three-phones {
+    position: absolute;
     top: 5px;
     left: 112px;
     width: 800px;
-    height: 100%;
+    height: 590px;
     background-image: url("../assets/images/slider/Slide-2.svg");
     background-position: center;
   }
@@ -46,7 +47,7 @@
 
   &_horizontal {
     top: 53px;
-    right: 258px;
+    left: 544px;
     cursor: pointer;
     transform: rotate(90deg);
 
