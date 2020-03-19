@@ -330,13 +330,13 @@ input[type="radio"].visually-hidden {
           -ms-transform: translateY(-1px);
               transform: translateY(-1px); }
     .link_contacts-facebook::before {
-      background-image: url("../assets/images/icons/facebook.png"); }
+      background-image: url("./assets/images/icons/facebook.png"); }
     .link_contacts-google::before {
-      background-image: url("../assets/images/icons/google.png"); }
+      background-image: url("./assets/images/icons/google.png"); }
     .link_contacts-twitter::before {
-      background-image: url("../assets/images/icons/twitter.png"); }
+      background-image: url("./assets/images/icons/twitter.png"); }
     .link_contacts-linkedin::before {
-      background-image: url("../assets/images/icons/linkedin.png"); }
+      background-image: url("./assets/images/icons/linkedin.png"); }
 
 .navigation-main {
   display: -webkit-box;
@@ -414,12 +414,12 @@ input[type="radio"].visually-hidden {
     margin: 0;
     list-style: none; }
   .slider__control_previous {
-    background-image: url("../assets/images/icons/chev.png");
+    background-image: url("./assets/images/icons/chev.png");
     background-position: 41px 281px;
     -webkit-transition: all 0.2s linear;
     transition: all 0.2s linear; }
   .slider__control_next {
-    background-image: url("../assets/images/icons/chev.png");
+    background-image: url("./assets/images/icons/chev.png");
     background-position: 42px 292px;
     -webkit-transition: all 0.2s linear;
     transition: all 0.2s linear;
@@ -447,7 +447,7 @@ input[type="radio"].visually-hidden {
     width: 240px;
     height: 483px;
     content: "";
-    background-image: url("../assets/images/iphone/Shadow.png");
+    background-image: url("./assets/images/iphone/Shadow.png");
     -webkit-transform: rotate(90deg) scale(1, -1);
         -ms-transform: rotate(90deg) scale(1, -1);
             transform: rotate(90deg) scale(1, -1); }
@@ -459,7 +459,7 @@ input[type="radio"].visually-hidden {
     width: 240px;
     height: 483px;
     content: "";
-    background-image: url("../assets/images/iphone/Shadow.png"); }
+    background-image: url("./assets/images/iphone/Shadow.png"); }
   .slider__slide_slide-1 {
     position: absolute;
     left: 0;
@@ -522,7 +522,7 @@ input[type="radio"].visually-hidden {
   z-index: 1;
   width: 218px;
   height: 460px;
-  background-image: url("../assets/images/iphone/iPhone_Vertical.svg");
+  background-image: url("./assets/images/iphone/iPhone_Vertical.svg");
   background-repeat: no-repeat; }
   .iphone_three-phones {
     position: absolute;
@@ -530,7 +530,7 @@ input[type="radio"].visually-hidden {
     left: 112px;
     width: 800px;
     height: 590px;
-    background-image: url("../assets/images/slider/Slide-2.svg");
+    background-image: url("./assets/images/slider/Slide-2.svg");
     background-position: center; }
   .iphone_vertical {
     top: 53px;
@@ -548,7 +548,7 @@ input[type="radio"].visually-hidden {
       height: 339px;
       content: "";
       background: rgba(128, 128, 128, 0.1);
-      background-image: url("../assets/images/iphone/Layer_6.jpg");
+      background-image: url("./assets/images/iphone/Layer_6.jpg");
       background-repeat: no-repeat;
       background-position: center;
       border: 2px solid #c6c6c6;
@@ -574,7 +574,7 @@ input[type="radio"].visually-hidden {
       height: 194px;
       content: "";
       background: rgba(128, 128, 128, 0.1);
-      background-image: url("../assets/images/iphone/Layer_5.jpg");
+      background-image: url("./assets/images/iphone/Layer_5.jpg");
       background-repeat: no-repeat;
       background-position: center;
       border: 2px solid #c6c6c6;
@@ -646,17 +646,17 @@ input[type="radio"].visually-hidden {
       border: 2px solid #666d89;
       border-radius: 50%; }
     .services__item_design::before {
-      background-image: url("../assets/images/icons/pen.svg"); }
+      background-image: url("./assets/images/icons/pen.svg"); }
     .services__item_ideas::before {
-      background-image: url("../assets/images/icons/bulb.svg"); }
+      background-image: url("./assets/images/icons/bulb.svg"); }
     .services__item_love::before {
-      background-image: url("../assets/images/icons/heart.svg"); }
+      background-image: url("./assets/images/icons/heart.svg"); }
     .services__item_responsive::before {
-      background-image: url("../assets/images/icons/phone.svg"); }
+      background-image: url("./assets/images/icons/phone.svg"); }
     .services__item_support::before {
-      background-image: url("../assets/images/icons/bubble.svg"); }
+      background-image: url("./assets/images/icons/bubble.svg"); }
     .services__item_feeling::before {
-      background-image: url("../assets/images/icons/star.svg"); }
+      background-image: url("./assets/images/icons/star.svg"); }
     .services__item-title {
       margin: 0;
       margin-bottom: 1rem;
@@ -925,7 +925,7 @@ input[type="radio"].visually-hidden {
       background-position: center;
       top: 5px;
       left: 1px;
-      background-image: url("../assets/images/icons/location-contacts.png"); }
+      background-image: url("./assets/images/icons/location-contacts.png"); }
     .contacts__contact-adress_phone {
       letter-spacing: 0.5px; }
     .contacts__contact-adress_phone::before {
@@ -938,7 +938,7 @@ input[type="radio"].visually-hidden {
       background-position: center;
       top: 27px;
       left: 1px;
-      background-image: url("../assets/images/icons/phone-contacts.png"); }
+      background-image: url("./assets/images/icons/phone-contacts.png"); }
     .contacts__contact-adress_email::before {
       position: absolute;
       display: block;
@@ -949,7 +949,7 @@ input[type="radio"].visually-hidden {
       background-position: center;
       top: 49px;
       left: 1px;
-      background-image: url("../assets/images/icons/mail-contacts.png"); }
+      background-image: url("./assets/images/icons/mail-contacts.png"); }
     .contacts__contact-adress_link {
       color: #ffffff;
       text-decoration: none;
