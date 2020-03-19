@@ -1,6 +1,5 @@
 const modal = document.querySelector('.modal__wrapper');
 const modalWindow = modal.querySelector('.modal__content');
-const modalContent = modalWindow.querySelector('.modal__wrapper');
 const submit = document.body.querySelector('#submit-button');
 const close = modalWindow.querySelector('.modal__close');
 
@@ -36,7 +35,9 @@ const isValid = () => {
       show();
       dataToModal();
     }
+    console.log(event);
   });
+
 }
 
 const form = document.querySelector('.contacts__form');
