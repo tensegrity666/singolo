@@ -6,7 +6,6 @@
 To view project on local machine:
 * clone this repository;
 * run ``npm i``;
-* checkout to __gh_pages__ branch;
 * then run ``gulp start`` and open http://localhost:3000 in your browser;
 
 __JS-files are added to page using the EcmaScript Modules (.mjs)__
