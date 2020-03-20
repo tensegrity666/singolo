@@ -14,3 +14,9 @@
     opacity: 0.97;
   }
 }
+
+@media (max-width: $medium-width) {
+  .header__main {
+    width: $medium-width;
+  }
+}

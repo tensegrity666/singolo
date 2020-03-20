@@ -62,6 +62,7 @@
     height: 483px;
     content: "";
     background-image: url("../assets/images/iphone/Shadow.png");
+    background-size: cover;
     transform: rotate(90deg) scale(1, -1);
   }
 
@@ -74,6 +75,7 @@
     height: 483px;
     content: "";
     background-image: url("../assets/images/iphone/Shadow.png");
+    background-size: cover;
   }
 
   &__slide_slide-1 {
@@ -91,5 +93,33 @@
   &_active,
   &_next {
     display: block;
+  }
+}
+
+@media (max-width: $medium-width) {
+  .slider {
+    width: $medium-width;
+    height: $slider-height-medium;
+
+    &__control_previous {
+      background-position: 41px 210px;
+    }
+
+    &__control_next {
+      background-position: 42px 210px;
+    }
+
+    &__slide_slide-1::before {
+      left: $phone-horizontal-position-left;
+      width: 180px;
+      height: 363px;
+    }
+
+    &__slide_slide-1::after {
+      top: 53px;
+      left: 100px;
+      width: 180px;
+      height: 363px;
+    }
   }
 }

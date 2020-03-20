@@ -64,3 +64,18 @@
     justify-content: start;
   }
 }
+
+@media (max-width: $medium-width) {
+  .team {
+    padding-bottom: 75px;
+
+    &__members {
+      grid-template-columns: repeat(3, 218px);
+    }
+
+    &__person-photo {
+      width: 218px;
+      height: 218px;
+    }
+  }
+}

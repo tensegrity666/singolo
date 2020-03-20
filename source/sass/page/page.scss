@@ -10,3 +10,10 @@
     box-shadow: none;
   }
 }
+
+@media (max-width: $medium-width) {
+  .page {
+    width: $medium-width;
+    margin: 0;
+  }
+}

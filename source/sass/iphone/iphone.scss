@@ -5,15 +5,18 @@
   height: 460px;
   background-image: url("../assets/images/iphone/iPhone_Vertical.svg");
   background-repeat: no-repeat;
+  background-size: cover;
 
   &_three-phones {
     position: absolute;
     top: 5px;
     left: 112px;
-    width: 800px;
-    height: 590px;
+    width: 500px;
+    height: 390px;
     background-image: url("../assets/images/slider/Slide-2.svg");
+    background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
   }
 
   &_vertical {
@@ -72,6 +75,41 @@
     &-off::after {
       background: rgba(0, 0, 0, 1);
       background-image: linear-gradient(to right, #1f1c1a 0.1%, #000000 99.99%);
+    }
+  }
+}
+
+@media (max-width: $medium-width) {
+  .iphone {
+    width: 162px;
+    height: 344px;
+
+    &_vertical {
+      left: 100px;
+
+      &::after {
+        top: 50px;
+        width: 142px;
+        height: 250px;
+      }
+    }
+
+    &_horizontal {
+      left: $phone-horizontal-position-left;
+
+      &::after {
+        top: 104px;
+        right: -45px;
+        width: 250px;
+        height: 142px;
+      }
+    }
+
+    &_three-phones {
+      top: 15px;
+      left: 70px;
+      width: 650px;
+      height: 420px;
     }
   }
 }

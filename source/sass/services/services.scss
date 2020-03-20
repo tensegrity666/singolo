@@ -98,3 +98,14 @@
     }
   }
 }
+
+@media (max-width: $medium-width) {
+  .services {
+    width: $medium-width;
+    padding: 40px 40px 64px;
+
+    &__item {
+      margin-right: 20px;
+    }
+  }
+}
