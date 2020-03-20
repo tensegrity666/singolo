@@ -54,3 +54,11 @@
     }
   }
 }
+
+@media (max-width: $medium-width) {
+  .form {
+    &__element_textarea {
+      width: 440px;
+    }
+  }
+}

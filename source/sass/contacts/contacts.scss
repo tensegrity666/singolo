@@ -104,3 +104,9 @@
     }
   }
 }
+
+@media (max-width: $medium-width) {
+  .contacts__form {
+    width: 440px;
+  }
+}

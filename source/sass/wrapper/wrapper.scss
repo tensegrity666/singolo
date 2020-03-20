@@ -2,3 +2,9 @@
   box-sizing: border-box;
   padding: 0 $wrapper-padding;
 }
+
+@media (max-width: $medium-width) {
+  .wrapper {
+    padding: 0 3.4rem;
+  }
+}
