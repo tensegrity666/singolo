@@ -8,3 +8,9 @@
     padding: 0 3.4rem;
   }
 }
+
+@media (max-width: $narrow-width) {
+  .wrapper {
+    padding: 0 2.7rem;
+  }
+}

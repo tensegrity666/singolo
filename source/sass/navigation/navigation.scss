@@ -58,6 +58,14 @@
   }
 }
 
+@media (max-width: $medium-width) {
+  .navigation-main {
+    &__item-link {
+      font-size: 1.5rem;
+    }
+  }
+}
+
 @media (max-width: $narrow-width) {
   .navigation-main {
     position: absolute;

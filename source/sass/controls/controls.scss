@@ -33,3 +33,10 @@
     height: $slider-height-medium;
   }
 }
+
+@media (max-width: $narrow-width) {
+  .controls__list_control {
+    width: 40px;
+    height: $slider-height-small;
+  }
+}

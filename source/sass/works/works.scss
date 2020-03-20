@@ -22,3 +22,30 @@
     }
   }
 }
+
+@media (max-width: $medium-width) {
+  .works {
+    grid-template-rows: repeat(4, $works-item-height-medium);
+    grid-template-columns: repeat(3, $works-item-width-medium);
+    max-height: calc(203px * 4);
+
+    &__item-picture {
+      width: $works-item-width-medium;
+      height: $works-item-height-medium;
+    }
+  }
+}
+
+@media (max-width: $narrow-width) {
+  .works {
+    grid-template-rows: repeat(4, 130px);
+    grid-template-columns: repeat(2, 152px);
+    gap: 10px;
+    max-height: calc(140px * 4);
+
+    &__item-picture {
+      width: 151px;
+      height: 128px;
+    }
+  }
+}

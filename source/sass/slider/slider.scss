@@ -123,3 +123,32 @@
     }
   }
 }
+
+@media (max-width: $narrow-width) {
+  .slider {
+    width: $narrow-width;
+    height: $slider-height-small;
+
+    &__control_previous {
+      background-position: 10px 98px;
+    }
+
+    &__control_next {
+      background-position: 12px 95px;
+    }
+
+    &__slide_slide-1::before {
+      top: 25px;
+      left: 200px;
+      width: 88px;
+      height: 177px;
+    }
+
+    &__slide_slide-1::after {
+      top: 24px;
+      left: 50px;
+      width: 88px;
+      height: 177px;
+    }
+  }
+}

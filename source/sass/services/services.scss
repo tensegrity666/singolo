@@ -109,3 +109,10 @@
     }
   }
 }
+
+@media (max-width: $narrow-width) {
+  .services {
+    width: $narrow-width;
+    padding: 30px;
+  }
+}

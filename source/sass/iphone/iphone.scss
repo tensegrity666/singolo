@@ -38,6 +38,7 @@
       background-image: url("../assets/images/iphone/Layer_6.jpg");
       background-repeat: no-repeat;
       background-position: center;
+      background-size: contain;
       border: $iphone-border;
       border-radius: 3px;
     }
@@ -67,6 +68,7 @@
       background-image: url("../assets/images/iphone/Layer_5.jpg");
       background-repeat: no-repeat;
       background-position: center;
+      background-size: contain;
       border: $iphone-border;
       border-radius: 3px;
       transform: rotate(-90deg);
@@ -88,7 +90,7 @@
       left: 100px;
 
       &::after {
-        top: 50px;
+        top: 55px;
         width: 142px;
         height: 250px;
       }
@@ -110,6 +112,44 @@
       left: 70px;
       width: 650px;
       height: 420px;
+    }
+  }
+}
+
+@media (max-width: $narrow-width) {
+  .iphone {
+    width: 80px;
+    height: 170px;
+
+    &_vertical {
+      top: 22px;
+      left: 50px;
+
+      &::after {
+        top: 24px;
+        left: 5px;
+        width: 70px;
+        height: 122px;
+      }
+    }
+
+    &_horizontal {
+      top: 24px;
+      left: 200px;
+
+      &::after {
+        top: 50px;
+        right: -21px;
+        width: 122px;
+        height: 70px;
+      }
+    }
+
+    &_three-phones {
+      top: 10px;
+      left: 30px;
+      width: 300px;
+      height: 200px;
     }
   }
 }
