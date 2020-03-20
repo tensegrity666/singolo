@@ -17,3 +17,10 @@
     margin: 0;
   }
 }
+
+@media (max-width: $narrow-width) {
+  .page {
+    width: $narrow-width;
+    padding-top: 0;
+  }
+}

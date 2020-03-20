@@ -4,12 +4,21 @@
   justify-content: flex-end;
   padding-bottom: 0.5rem;
 
+  &__button {
+    display: none;
+  }
+
   &__list {
+    position: relative;
     display: flex;
     justify-content: space-between;
     min-width: $navigation-list-width;
     padding: 0;
     margin: 0;
+
+    &::before {
+      position: absolute;
+    }
   }
 
   &__item {
@@ -45,6 +54,46 @@
     &:hover {
       color: $accent-color;
       transition: $transition;
+    }
+  }
+}
+
+@media (max-width: $narrow-width) {
+  .navigation-main {
+    position: absolute;
+    left: -150%;
+    display: block;
+
+    &__button {
+      position: fixed;
+      top: 32px;
+      left: 20px;
+      display: block;
+      width: 25px;
+      height: 20px;
+      background-color: transparent;
+      border: none;
+      transition: transform 0.15s ease;
+
+      &-inner {
+        @include burger;
+
+        top: 50%;
+
+        &::before {
+          @include burger;
+
+          top: -10px;
+          content: "";
+        }
+
+        &::after {
+          @include burger;
+
+          top: 10px;
+          content: "";
+        }
+      }
     }
   }
 }

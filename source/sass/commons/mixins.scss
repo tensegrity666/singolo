@@ -50,3 +50,12 @@
   background-repeat: no-repeat;
   background-position: center;
 }
+
+@mixin burger {
+  position: absolute;
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  border-radius: 5px;
+}

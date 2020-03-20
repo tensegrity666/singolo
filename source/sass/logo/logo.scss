@@ -17,3 +17,9 @@
     color: $accent-color;
   }
 }
+
+@media (max-width: $narrow-width) {
+  .logo {
+    margin: 0 auto;
+  }
+}

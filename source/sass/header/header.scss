@@ -20,3 +20,10 @@
     width: $medium-width;
   }
 }
+
+@media (max-width: $narrow-width) {
+  .header__main {
+    position: relative;
+    width: $narrow-width;
+  }
+}
