@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -26,6 +25,12 @@
       </li>
     </ul>
     <nav class="navigation-main">
+      <button class="navigation-main__button">
+        <span class="visually-hidden">
+          open menu
+        </span>
+        <span class="navigation-main__button-inner"></span>
+      </button>
       <h2 class="visually-hidden">site navigation</h2>
       <ul class="navigation-main__list">
         <li class="navigation-main__item">
@@ -60,85 +65,73 @@
   <main>
     <section class="slider slider_background-red">
       <h2 class="visually-hidden">gallery of products</h2>
-      <ul class="slider__gallery">
-        <li class="slider__slide slider__slide_slide-1 slider_active"
-          aria-label="Illustration with two white Iphones on pink background">
-          <div class="iphone iphone_vertical"></div>
-          <div class="iphone iphone_horizontal"></div>
-        </li>
-        <li class="slider__slide slider__slide_slide-2"
-          aria-label="Illustration with three white Iphones on blue background">
-          <div class="iphone iphone_three-phones"></div>
-        </li>
-      </ul>
+        <ul class="slider__gallery">
+          <li class="slider__slide slider__slide_slide-1 slider_active" aria-label="Illustration with two white Iphones on pink background">
+            <div class="iphone iphone_vertical"></div>
+            <div class="iphone iphone_horizontal"></div>
+          </li>
+          <li class="slider__slide slider__slide_slide-2" aria-label="Illustration with three white Iphones on blue background">
+            <div class="iphone_three-phones"></div>
+          </li>
+        </ul>
 
-      <ul class="controls__list" aria-label="Gallery controls">
-        <li>
-          <button class="controls__list_control slider__control_previous"
-            id="previous" aria-label="Previous"></button>
-        </li>
-        <li>
-          <button class="controls__list_control slider__control_next" id="next"
-            aria-label="Next"></button>
-        </li>
-      </ul>
+        <ul class="controls__list" aria-label="Gallery controls">
+          <li>
+            <button class="controls__list_control slider__control_previous" id="previous" aria-label="Previous"></button>
+          </li>
+          <li>
+            <button class="controls__list_control slider__control_next" id="next" aria-label="Next"></button>
+          </li>
+        </ul>
     </section>
 
     <section class="section services wrapper" id="servc">
       <h2 class="services__title">our services</h2>
       <p class="services__paragraph">
-        Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis
-        mollis,
-        non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem
-        nec elit.
+        Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis,
+        non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
         Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.
       </p>
       <ul class="services__list">
         <li class="services__item services__item_design">
           <h3 class="services__item-title">custom design</h3>
           <p class="services__item-paragraph">
-            Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam
-            laoreet,
+            Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet,
             viverra lacus ut, ultrices velit.
           </p>
         </li>
         <li class="services__item services__item_ideas">
           <h3 class="services__item-title">Inovative Ideas</h3>
           <p class="services__item-paragraph">
-            Quisque luctus, quam eget molestie commodo, lacus purus cursus
-            purus, nec rutrum
+            Quisque luctus, quam eget molestie commodo, lacus purus cursus purus, nec rutrum
             tellus dolor id lorem.
           </p>
         </li>
         <li class="services__item services__item_love">
           <h3 class="services__item-title">love is the answer</h3>
           <p class="services__item-paragraph">
-            Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis,
-            et consequat
+            Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat
             felis. Quisque condimentum.
           </p>
         </li>
         <li class="services__item services__item_responsive">
           <h3 class="services__item-title">responsive layout</h3>
           <p class="services__item-paragraph">
-            Sed porttitor placerat rhoncus. In at nunc tellus. Maecenas blandit
-            nunc ligula.
+            Sed porttitor placerat rhoncus. In at nunc tellus. Maecenas blandit nunc ligula.
             Praesent elit leo.
           </p>
         </li>
         <li class="services__item services__item_support">
           <h3 class="services__item-title">24 / 7 support</h3>
           <p class="services__item-paragraph">
-            Vivamus vel quam lacinia, tincidunt dui non, vehicula nisi. Nulla a
-            sem erat.
+            Vivamus vel quam lacinia, tincidunt dui non, vehicula nisi. Nulla a sem erat.
             Pellentesque egestas venenatis lorem .
           </p>
         </li>
         <li class="services__item services__item_feeling">
           <h3 class="services__item-title">feel like a star</h3>
           <p class="services__item-paragraph">
-            Quisque luctus, quam eget molestie commodo, lacus purus cursus
-            purus, nec rutrum
+            Quisque luctus, quam eget molestie commodo, lacus purus cursus purus, nec rutrum
             tellus dolor id lorem.
           </p>
         </li>
@@ -160,66 +153,52 @@
         <li class="sort__item">artwork</li>
       </ul>
 
-      <ul class="works" role="list">
-        <li class="works__item" tabindex="0" role="listitem"
-          aria-label="Boat with yellow sails">
-          <img src="./assets/images/portfolio/Project.png" width="220"
-            height="187" alt="">
+      <ul class="works">
+        <li class="works__item" tabindex="0" role="img" aria-label="Boat with yellow sails">
+          <img class="works__item-picture" src="./assets/images/portfolio/Project.png" width="220" height="187" alt="" loading="lazy">
         </li>
-        <li class="works__item" tabindex="0" role="listitem"
-          aria-label="Circle green girl">
-          <img src="./assets/images/portfolio/Project-2.png" width="220"
-            height="187" alt="">
+        <li class="works__item" tabindex="0" role="img" aria-label="Circle green girl">
+          <img class="works__item-picture" src="./assets/images/portfolio/Project-2.png" width="220" height="187" alt="" loading="lazy">
         </li>
-        <li class="works__item" tabindex="0" role="listitem"
-          aria-label="Black-and-white graphics">
-          <img src="./assets/images/portfolio/Layer_9.png" width="220"
-            height="187" alt="">
+        <li class="works__item" tabindex="0" role="img" aria-label="Black-and-white graphics">
+          <img class="works__item-picture" src="./assets/images/portfolio/Layer_9.png" width="220" height="187"
+            alt="" loading="lazy">
         </li>
-        <li class="works__item" tabindex="0" role="listitem"
-          aria-label="Golden robot with hearth  in his hand">
-          <img src="./assets/images/portfolio/Project-3.png" width="220"
-            height="187" alt="">
+        <li class="works__item" tabindex="0" role="img" aria-label="Golden robot with hearth  in his hand">
+          <img class="works__item-picture" src="./assets/images/portfolio/Project-3.png" width="220"
+            height="187" alt="" loading="lazy">
         </li>
-        <li class="works__item" tabindex="0" role="listitem"
-          aria-label="Stranger things">
-          <img src="./assets/images/portfolio/Project-4.png" width="220"
-            height="187" alt="">
+        <li class="works__item" tabindex="0" role="img" aria-label="Stranger things">
+          <img class="works__item-picture" src="./assets/images/portfolio/Project-4.png" width="220"
+            height="187" alt="" loading="lazy">
         </li>
-        <li class="works__item" tabindex="0" role="listitem"
-          aria-label="Colored plant">
-          <img src="./assets/images/portfolio/Project-5.png" width="220"
-            height="187" alt="">
+        <li class="works__item" tabindex="0" role="img" aria-label="Colored plant">
+          <img class="works__item-picture" src="./assets/images/portfolio/Project-5.png" width="220"
+            height="187" alt="" loading="lazy">
         </li>
-        <li class="works__item" tabindex="0" role="listitem"
-          aria-label="White, blue and red abstract graphics">
-          <img src="./assets/images/portfolio/Layer_11.png" width="220"
-            height="187" alt="">
+        <li class="works__item" tabindex="0" role="img" aria-label="White, blue and red abstract graphics">
+          <img class="works__item-picture" src="./assets/images/portfolio/Layer_11.png" width="220" height="187"
+            alt="" loading="lazy">
         </li>
-        <li class="works__item" tabindex="0" role="listitem"
-          aria-label="Drawed hens with eggs">
-          <img src="./assets/images/portfolio/Layer_8.png" width="220"
-            height="187" alt="">
+        <li class="works__item" tabindex="0" role="img" aria-label="Drawed hens with eggs">
+          <img class="works__item-picture" src="./assets/images/portfolio/Layer_8.png" width="220" height="187"
+            alt="" loading="lazy">
         </li>
-        <li class="works__item" tabindex="0" role="listitem"
-          aria-label="Green giant with tower on head">
-          <img src="./assets/images/portfolio/Project-6.png" width="220"
-            height="187" alt="">
+        <li class="works__item" tabindex="0" role="img" aria-label="Green giant with tower on head">
+          <img class="works__item-picture" src="./assets/images/portfolio/Project-6.png" width="220"
+            height="187" alt="" loading="lazy">
         </li>
-        <li class="works__item" tabindex="0" role="listitem"
-          aria-label="Words graphics">
-          <img src="./assets/images/portfolio/Project-7.png" width="220"
-            height="187" alt="">
+        <li class="works__item" tabindex="0" role="img" aria-label="Words graphics">
+          <img class="works__item-picture" src="./assets/images/portfolio/Project-7.png" width="220"
+            height="187" alt="" loading="lazy">
         </li>
-        <li class="works__item" tabindex="0" role="listitem"
-          aria-label="White troll">
-          <img src="./assets/images/portfolio/Project-8.png" width="220"
-            height="187" alt="">
+        <li class="works__item" tabindex="0" role="img" aria-label="White troll">
+          <img class="works__item-picture" src="./assets/images/portfolio/Project-8.png" width="220"
+            height="187" alt="" loading="lazy">
         </li>
-        <li class="works__item" tabindex="0" role="listitem"
-          aria-label="Something brown and broken glasses">
-          <img src="./assets/images/portfolio/Project-9.png" width="220"
-            height="187" alt="">
+        <li class="works__item" tabindex="0" role="img" aria-label="Something brown and broken glasses">
+          <img class="works__item-picture" src="./assets/images/portfolio/Project-9.png" width="220"
+            height="187" alt="" loading="lazy">
         </li>
       </ul>
     </section>
@@ -229,26 +208,24 @@
       <p class="team__paragraph">
         Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis
         mollis,
-        non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem
-        nec
+        non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec
         elit.
         Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.
       </p>
       <ul class="team__members">
         <li class="team__person">
-          <img src="./assets/images/team/photo-1.png" width="300" height="300"
-            alt="Adam Jensen">
+          <img class="team__person-photo" src="./assets/images/team/photo-1.png" width="300" height="300"
+            alt="Adam Jensen" loading="lazy">
           <h3 class="team__person-title">Adam Jensen</h3>
           <p class="team__person-paragraph">
-            Quisque luctus, quam eget molestie commodo, lacus purus cursus
-            purus,
+            Quisque luctus, quam eget molestie commodo, lacus purus cursus purus,
             nec rutrum
             tellus dolor id lorem.
           </p>
           <ul class="team__contacts">
             <li>
-              <a class="link link_contacts link_contacts-facebook"
-                href="#"><span class="visually-hidden">Facebook</span></a>
+              <a class="link link_contacts link_contacts-facebook" href="#"><span
+                  class="visually-hidden">Facebook</span></a>
             </li>
             <li>
               <a class="link link_contacts link_contacts-google" href="#"><span
@@ -259,15 +236,15 @@
                   class="visually-hidden">Twitter</span></a>
             </li>
             <li>
-              <a class="link link_contacts link_contacts-linkedin"
-                href="#"><span class="visually-hidden">Linkedin</span></a>
+              <a class="link link_contacts link_contacts-linkedin" href="#"><span
+                  class="visually-hidden">Linkedin</span></a>
             </li>
           </ul>
         </li>
 
         <li class="team__person">
-          <img src="./assets/images/team/photo-2.png" width="300" height="300"
-            alt="Desmond Miles">
+          <img class="team__person-photo" src="./assets/images/team/photo-2.png" width="300" height="300"
+            alt="Desmond Miles" loading="lazy">
           <h3 class="team__person-title">Desmond Miles</h3>
           <p class="team__person-paragraph">
             Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam
@@ -276,8 +253,8 @@
           </p>
           <ul class="team__contacts">
             <li>
-              <a class="link link_contacts link_contacts-facebook"
-                href="#"><span class="visually-hidden">Facebook</span></a>
+              <a class="link link_contacts link_contacts-facebook" href="#"><span
+                  class="visually-hidden">Facebook</span></a>
             </li>
             <li>
               <a class="link link_contacts link_contacts-google" href="#"><span
@@ -288,26 +265,25 @@
                   class="visually-hidden">Twitter</span></a>
             </li>
             <li>
-              <a class="link link_contacts link_contacts-linkedin"
-                href="#"><span class="visually-hidden">Linkedin</span></a>
+              <a class="link link_contacts link_contacts-linkedin" href="#"><span
+                  class="visually-hidden">Linkedin</span></a>
             </li>
           </ul>
         </li>
 
         <li class="team__person">
-          <img src="./assets/images/team/photo-3.png" width="300" height="300"
-            alt="Scolara Visari">
+          <img class="team__person-photo" src="./assets/images/team/photo-3.png" width="300" height="300"
+            alt="Scolara Visari" loading="lazy">
           <h3 class="team__person-title">Scolara Visari</h3>
           <p class="team__person-paragraph">
-            Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis,
-            et
+            Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et
             consequat
             felis. Quisque condimentum.
           </p>
           <ul class="team__contacts">
             <li>
-              <a class="link link_contacts link_contacts-facebook"
-                href="#"><span class="visually-hidden">Facebook</span></a>
+              <a class="link link_contacts link_contacts-facebook" href="#"><span
+                  class="visually-hidden">Facebook</span></a>
             </li>
             <li>
               <a class="link link_contacts link_contacts-google" href="#"><span
@@ -318,8 +294,8 @@
                   class="visually-hidden">Twitter</span></a>
             </li>
             <li>
-              <a class="link link_contacts link_contacts-linkedin"
-                href="#"><span class="visually-hidden">Linkedin</span></a>
+              <a class="link link_contacts link_contacts-linkedin" href="#"><span
+                  class="visually-hidden">Linkedin</span></a>
             </li>
           </ul>
         </li>
@@ -331,43 +307,37 @@
       <p class="contacts__paragraph">
         Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis
         mollis,
-        non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem
-        nec
+        non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec
         elit.
         Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.
       </p>
       <div class="contacts__container">
         <form class="contacts__form form">
           <input class="form__element" type="text" name="name"
-            placeholder="Name (Required)" pattern="[A-Za-z0-9\s]{1,20}"
-            required="" id="Name">
+            placeholder="Name (Required)" pattern="[A-Za-z0-9\s]{1,20}" required="" id="Name">
           <input class="form__element" type="email" name="email"
             placeholder="Email (Required)" required="" id="Email">
           <input class="form__element" type="text" name="subject"
             placeholder="Subject" id="Subject" maxlength="40">
           <textarea class="form__element form__element_textarea" name="Comment"
-            placeholder="Describe your project in detail..."
-            id="Comment"></textarea>
-          <button class="form__element form__element_button" type="submit"
-            id="submit-button">send</button>
+            placeholder="Describe your project in detail..." id="Comment"></textarea>
+          <button class="form__element form__element_button"
+            type="submit" id="submit-button">send</button>
         </form>
 
         <section class="contacts__contact-info">
           <h3 class="contacts__contact-title">Contact Information</h3>
           <p class="contacts__contact-paragraph">
-            Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh.
-            Fusce
+            Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce
             vitae
-            aliquam tellus. Proin sit amet volutpat libero. Nulla sed nunc et
-            tortor
+            aliquam tellus. Proin sit amet volutpat libero. Nulla sed nunc et tortor
             luctus
             faucibus. Morbi at aliquet turpis, et consequat felis.
           </p>
           <ul class="contacts__contact-adress">
             <li class="contacts__contact-adress_location">
-              <a class="contacts__contact-adress_link"
-                href="http://map.google.com" target="_blank"
-                rel="noopener noreferrer">Elm St. 14/05 Lost
+              <a class="contacts__contact-adress_link" href="http://map.google.com"
+                target="_blank" rel="noopener noreferrer">Elm St. 14/05 Lost
                 City</a>
             </li>
             <li class="contacts__contact-adress_phone">
@@ -408,18 +378,17 @@
     </ul>
   </footer>
 
-  <div class="modal modal__wrapper">
-    <div class="modal modal__content">
-      <ul class="modal__content_list">
-        <li class="modal__content_title" id="Succes"></li>
-        <li id="subjectContent"></li>
-        <li class="modal__content_message" id="commentContent"></li>
-      </ul>
-      <button class="modal__close" type="button">ok</button>
-    </div>
+<div class="modal modal__wrapper">
+  <div class="modal modal__content">
+    <ul class="modal__content_list">
+      <li class="modal__content_title" id="Succes"></li>
+      <li id="subjectContent"></li>
+      <li class="modal__content_message" id="commentContent"></li>
+    </ul>
+    <button class="modal__close" type="button">ok</button>
   </div>
+</div>
 
-  <script src="./scripts/script.mjs" type="module"></script>
+<script src="./scripts/script.mjs" type="module"></script>
 </body>
-
 </html>
