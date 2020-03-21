@@ -8,4 +8,5 @@ To view project on local machine:
 * run ``npm i``;
 * then run ``gulp start`` and open http://localhost:3000 in your browser;
 
-__JS-files are added to page using the EcmaScript Modules (.mjs)__
+
+_JS-files are added to page using the EcmaScript Modules_
