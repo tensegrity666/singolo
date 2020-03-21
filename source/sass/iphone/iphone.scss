@@ -5,7 +5,6 @@
   height: 460px;
   background-image: url("../assets/images/iphone/iPhone_Vertical.svg");
   background-repeat: no-repeat;
-  background-size: cover;
 
   &_three-phones {
     position: absolute;
@@ -85,6 +84,7 @@
   .iphone {
     width: 162px;
     height: 344px;
+    background-size: cover;
 
     &_vertical {
       left: 100px;
