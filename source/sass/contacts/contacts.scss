@@ -110,3 +110,56 @@
     width: 440px;
   }
 }
+
+@media (max-width: $narrow-width) {
+  .contacts {
+    &__form {
+      width: 315px;
+      margin-bottom: 32px;
+    }
+
+    &__container {
+      flex-direction: column;
+    }
+
+    &__contact-info {
+      padding-left: 0;
+    }
+
+    &__title {
+      font-size: 2rem;
+    }
+
+    &__contact-paragraph {
+      font-size: 1.6rem;
+    }
+
+    &__contact-adress {
+      &_link {
+        padding-left: 5px;
+        font-size: 1.6rem;
+      }
+
+      &_location::before {
+        top: 10px;
+        width: 18px;
+        height: 18px;
+        background-size: contain;
+      }
+
+      &_phone::before {
+        top: 40px;
+        width: 18px;
+        height: 18px;
+        background-size: contain;
+      }
+
+      &_email::before {
+        top: 72px;
+        width: 18px;
+        height: 18px;
+        background-size: contain;
+      }
+    }
+  }
+}

@@ -79,3 +79,32 @@
     }
   }
 }
+
+@media (max-width: $narrow-width) {
+  .team {
+    padding-bottom: 15px;
+
+    &__members {
+      grid-template-columns: 1fr;
+    }
+
+    &__person {
+      margin-bottom: 35px;
+
+      &-photo {
+        width: 314px;
+        height: 314px;
+      }
+
+      &-title {
+        font-size: 2rem;
+        line-height: 1.1;
+      }
+
+      &-paragraph {
+        font-size: 1.6rem;
+        line-height: 1.3;
+      }
+    }
+  }
+}

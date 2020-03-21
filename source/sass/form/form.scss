@@ -62,3 +62,11 @@
     }
   }
 }
+
+@media (max-width: $narrow-width) {
+  .form {
+    &__element_textarea {
+      width: 315px;
+    }
+  }
+}
