@@ -726,7 +726,8 @@ input[type="radio"].visually-hidden {
 @media (max-width: 768px) {
   .iphone {
     width: 162px;
-    height: 344px; }
+    height: 344px;
+    background-size: cover; }
     .iphone_vertical {
       left: 100px; }
       .iphone_vertical::after {
