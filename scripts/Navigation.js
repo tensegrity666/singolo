@@ -5,6 +5,7 @@ const headerHeight = document.querySelector('.header__main').offsetHeight;
 const GAP_FOR_LAST_BLOCK = 100;
 
 export const navigation = () => {
+  tabDefault();
   document.addEventListener('scroll', onScroll);
 }
 
@@ -25,6 +26,14 @@ function linkSwitch(element) {
     anchor.classList.remove('link_active');
     if (attributeId === attributeHref) {
       anchor.classList.add('link_active');
+      localStorage.setDefault = anchor.getAttribute('href');
     }
+  });
+}
+
+function tabDefault() {
+  tab.forEach(element => {
+    if (element.getAttribute('href') === localStorage.setDefault)
+      element.classList.add('link_active');
   });
 }
