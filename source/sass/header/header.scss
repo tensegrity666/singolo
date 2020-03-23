@@ -18,12 +18,22 @@
 @media (max-width: $medium-width) {
   .header__main {
     width: $medium-width;
+    transition: transform 0.5s linear;
+  }
+
+  .header__main[data-visibility="hidden"] {
+    transition: transform 0.5s linear;
+    transform: translateY(-100%);
   }
 }
 
 @media (max-width: $narrow-width) {
   .header__main {
-    position: relative;
     width: $narrow-width;
+  }
+
+  .header__main[data-visibility="hidden"] {
+    transition: transform 0.5s linear;
+    transform: translateY(-100%);
   }
 }

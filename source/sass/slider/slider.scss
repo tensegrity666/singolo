@@ -4,6 +4,7 @@
   height: $slider-height;
   overflow: hidden;
   transition: $transition-gallery;
+  cursor: grab;
 
   &_background-red {
     background-color: $accent-color;

@@ -10,4 +10,4 @@ export const headerHide = () => {
     }
     position = document.body.getBoundingClientRect().top;
   });
-}
+};
