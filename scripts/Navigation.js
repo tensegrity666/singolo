@@ -11,7 +11,7 @@ function linkSwitch(element) {
     anchor.classList.remove('link_active');
     if (attributeId === attributeHref) {
       anchor.classList.add('link_active');
-      localStorage.setDefault = anchor.getAttribute('href');
+      sessionStorage.setDefault = anchor.getAttribute('href');
     }
   });
 }
@@ -29,7 +29,7 @@ function onScroll() {
 function tabDefault() {
   tab.forEach((element) => {
     element.classList.remove('link_active');
-    if (element.getAttribute('href') === localStorage.setDefault) {
+    if (element.getAttribute('href') === sessionStorage.setDefault) {
       element.classList.add('link_active');
     }
   });
