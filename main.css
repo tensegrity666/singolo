@@ -250,8 +250,7 @@ input[type="radio"].visually-hidden {
 
 @media (max-width: 375px) {
   .page {
-    width: 375px;
-    padding-top: 0; } }
+    width: 375px; } }
 
 .page::-webkit-scrollbar {
   width: 15px; }
@@ -302,12 +301,31 @@ input[type="radio"].visually-hidden {
 
 @media (max-width: 768px) {
   .header__main {
-    width: 768px; } }
+    width: 768px;
+    -webkit-transition: -webkit-transform 0.5s linear;
+    transition: -webkit-transform 0.5s linear;
+    transition: transform 0.5s linear;
+    transition: transform 0.5s linear, -webkit-transform 0.5s linear; }
+  .header__main[data-visibility="hidden"] {
+    -webkit-transition: -webkit-transform 0.5s linear;
+    transition: -webkit-transform 0.5s linear;
+    transition: transform 0.5s linear;
+    transition: transform 0.5s linear, -webkit-transform 0.5s linear;
+    -webkit-transform: translateY(-100%);
+        -ms-transform: translateY(-100%);
+            transform: translateY(-100%); } }
 
 @media (max-width: 375px) {
   .header__main {
-    position: relative;
-    width: 375px; } }
+    width: 375px; }
+  .header__main[data-visibility="hidden"] {
+    -webkit-transition: -webkit-transform 0.5s linear;
+    transition: -webkit-transform 0.5s linear;
+    transition: transform 0.5s linear;
+    transition: transform 0.5s linear, -webkit-transform 0.5s linear;
+    -webkit-transform: translateY(-100%);
+        -ms-transform: translateY(-100%);
+            transform: translateY(-100%); } }
 
 .logo {
   padding: 0;
@@ -334,7 +352,9 @@ input[type="radio"].visually-hidden {
   transition: all 0.2s linear;
   outline: none; }
   .link:focus, .link_active, .link_active:hover {
-    color: #f06c64; }
+    color: #f06c64;
+    -webkit-transition: none;
+    transition: none; }
   .link_contacts {
     position: relative;
     padding-right: 40px;
@@ -482,7 +502,9 @@ input[type="radio"].visually-hidden {
   height: 600px;
   overflow: hidden;
   -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out; }
+  transition: all 0.3s ease-in-out;
+  cursor: -webkit-grab;
+  cursor: grab; }
   .slider_background-red {
     background-color: #f06c64;
     box-shadow: inset 0 -6px 0 0 #ea676b;
@@ -681,7 +703,6 @@ input[type="radio"].visually-hidden {
       width: 194px;
       height: 339px;
       content: "";
-      background: rgba(128, 128, 128, 0.1);
       background-image: url("./assets/images/iphone/Layer_6.jpg");
       background-repeat: no-repeat;
       background-position: center;
@@ -708,7 +729,6 @@ input[type="radio"].visually-hidden {
       width: 339px;
       height: 194px;
       content: "";
-      background: rgba(128, 128, 128, 0.1);
       background-image: url("./assets/images/iphone/Layer_5.jpg");
       background-repeat: no-repeat;
       background-position: center;

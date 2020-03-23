@@ -6,20 +6,20 @@ const background = document.querySelector('.slider');
 const slider = background.querySelector('.slider__gallery');
 const slides = slider.querySelectorAll('.slider__slide');
 
-let currentSlide = 0;
-let isEnabled = true;
+export let currentSlide = 0;
+export let isEnabled = true;
 
 function changeCurrentSlide(n) {
   currentSlide = (n + slides.length) % slides.length;
 }
 
-function previousSlide(n) {
+export function previousSlide(n) {
   hideItem('to-left');
   changeCurrentSlide(n - 1);
   showItem('from-right');
 }
 
-function nextSlide(n) {
+export function nextSlide(n) {
   hideItem('to-right');
   changeCurrentSlide(n + 1);
   showItem('from-left');
@@ -60,7 +60,7 @@ export const arrows = () => {
   });
 }
 
-const backgroundToggle = () => {
+export const backgroundToggle = () => {
   background.classList.toggle('slider_background-blue');
   controlArrows.forEach(element => element.classList.toggle('slider__control_blue'));
 }
