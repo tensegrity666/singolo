@@ -13,10 +13,10 @@ let elapsedTime = 0;
 
 const touch = () => {
   surface.addEventListener('touchstart', function (event) {
-    if (event.target.classList.contains('slider__control_previous')) {
+    if (event.target.classList.contains('slider__control_previous') && isEnabled) {
       previousSlide(currentSlide);
       backgroundToggle();
-    } else if (event.target.classList.contains('slider__control_next')) {
+    } else if (event.target.classList.contains('slider__control_next') && isEnabled) {
       nextSlide(currentSlide);
       backgroundToggle();
     }
