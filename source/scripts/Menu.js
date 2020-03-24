@@ -7,14 +7,17 @@ const burger = nav.querySelector('.navigation-main__button-inner');
 const showMenu = () => {
   nav.classList.toggle('navigation-main_show');
   burger.classList.toggle('navigation-main__button-inner_reverse');
+  modal.classList.toggle('modal__wrapper_show');
 }
 
 export const menuHandler = () => {
   header.addEventListener('touchend', event => {
-    console.log(event.target)
     if (event.target.classList.contains('navigation-main__button') || event.target.classList.contains('navigation-main__button-inner')) {
+      event.preventDefault();
       showMenu();
-      modal.classList.toggle('modal__wrapper_show');
     }
+  });
+  burger.addEventListener('touchmove', event => {
+    event.preventDefault();
   });
 }

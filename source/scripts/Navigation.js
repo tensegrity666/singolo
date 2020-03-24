@@ -29,7 +29,6 @@ function onScroll() {
 
 function tabDefault() {
   tab.forEach(element => {
-    // element.classList.remove('link_active');
     if (element.getAttribute('href') === localStorage.setDefault) {
       element.classList.add('link_active');
     }
