@@ -20,6 +20,7 @@
 
 @media (max-width: $narrow-width) {
   .logo {
+    z-index: $top-z-index;
     margin: 0 auto;
   }
 }

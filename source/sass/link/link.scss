@@ -1,11 +1,9 @@
 .link {
   @include reset-link;
 
-  outline: none;
+  transition: none;
 
-  &:focus,
-  &_active,
-  &_active:hover {
+  &_active {
     color: $accent-color;
     transition: none;
   }
@@ -14,6 +12,7 @@
     position: relative;
     padding-right: 40px;
     transition: 0.1s linear;
+    outline: none;
 
     &::before {
       position: absolute;

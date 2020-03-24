@@ -54,7 +54,7 @@
 @mixin burger {
   position: absolute;
   display: block;
-  width: 25px;
+  width: $burger-inner-size;
   height: 3px;
   background-color: #fff;
   border-radius: 5px;

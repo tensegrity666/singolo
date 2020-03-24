@@ -1,6 +1,6 @@
 .iphone {
   position: absolute;
-  z-index: 1;
+  z-index: $bottom-z-index;
   width: 218px;
   height: 460px;
   background-image: url("../assets/images/iphone/iPhone_Vertical.svg");

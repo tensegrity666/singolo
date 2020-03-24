@@ -21,5 +21,6 @@
 @media (max-width: $narrow-width) {
   .page {
     width: $narrow-width;
+    overflow-x: hidden;
   }
 }

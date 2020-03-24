@@ -3,6 +3,12 @@ $transition: all 0.2s linear;
 $transition-gallery: all 0.3s ease-in-out;
 $scroll-width: 15px;
 
+$bottom-z-index: 1;
+$lower-z-index: 9;
+$higher-z-index: 99;
+$modal-z-index: 999;
+$top-z-index: 9999;
+
 $screen-width: 1920px;
 $width: 1020px;
 $medium-width: 768px;
@@ -12,7 +18,10 @@ $accent-color: #f06c64;
 $second-slide-color: #648bf0;
 $default-color: #000000;
 $wrapper-shadow: 0 1px 3px 0 rgba(50, 55, 70, 0.7);
+
 $button-color: #fbc65f;
+$burger-outer-size: 60px;
+$burger-inner-size: 24px;
 
 $wrapper-padding: 4rem;
 

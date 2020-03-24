@@ -5,6 +5,7 @@ import { modalShow } from './Modal.js';
 import { screen } from './Screen.js';
 import { headerHide } from './Header.js';
 import { swipeDetect } from './Swiper.js';
+import { menuHandler } from './Menu.js';
 
 window.onload = () => {
   navigation();
@@ -14,4 +15,5 @@ window.onload = () => {
   screen();
   headerHide();
   swipeDetect();
+  menuHandler();
 };

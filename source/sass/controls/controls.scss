@@ -1,4 +1,6 @@
 .controls__list {
+  position: relative;
+  z-index: $lower-z-index;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -19,7 +21,9 @@
     background-repeat: no-repeat;
     border: none;
     outline: none;
+    mix-blend-mode: normal;
     transition: $transition;
+    backdrop-filter: blur(2px);
 
     &:focus {
       outline: 1px dotted rgba(128, 128, 128, 0.2);

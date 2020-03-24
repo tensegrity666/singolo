@@ -6,18 +6,19 @@ const GAP_FOR_LAST_BLOCK = 100;
 
 function linkSwitch(element) {
   const attributeId = element.getAttribute('id');
-  tab.forEach((anchor) => {
+  tab.forEach(anchor => {
     const attributeHref = anchor.getAttribute('href').substring(1);
     anchor.classList.remove('link_active');
     if (attributeId === attributeHref) {
+      localStorage.setDefault = anchor.getAttribute('href');
       anchor.classList.add('link_active');
-      sessionStorage.setDefault = anchor.getAttribute('href');
     }
   });
 }
 
 function onScroll() {
   const currentPosition = window.scrollY;
+  localStorage.setDefault = '';
 
   sections.forEach((element) => {
     if ((element.offsetTop - headerHeight - GAP_FOR_LAST_BLOCK) <= currentPosition && (element.offsetTop + element.offsetHeight) > currentPosition) {
@@ -27,9 +28,9 @@ function onScroll() {
 }
 
 function tabDefault() {
-  tab.forEach((element) => {
-    element.classList.remove('link_active');
-    if (element.getAttribute('href') === sessionStorage.setDefault) {
+  tab.forEach(element => {
+    // element.classList.remove('link_active');
+    if (element.getAttribute('href') === localStorage.setDefault) {
       element.classList.add('link_active');
     }
   });

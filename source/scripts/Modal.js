@@ -1,4 +1,4 @@
-const modal = document.querySelector('.modal__wrapper');
+export const modal = document.querySelector('.modal__wrapper');
 const modalWindow = modal.querySelector('.modal__content');
 const submit = document.body.querySelector('#submit-button');
 const close = modalWindow.querySelector('.modal__close');
@@ -13,7 +13,7 @@ export const modalShow = () => {
     form.reset();
   });
 
-const noScroll = () => {
+export const noScroll = () => {
   document.body.classList.toggle('page_noscroll');
 }
 
@@ -35,7 +35,6 @@ const isValid = () => {
       show();
       dataToModal();
     }
-    console.log(event);
   });
 
 }
