@@ -17,6 +17,7 @@ const concat = require('gulp-concat');
 const gzip = require('gulp-gzip');
 const imagemin = require('gulp-imagemin');
 const sourcemap = require('gulp-sourcemaps');
+const terser = require('gulp-terser');
 
 function server() {
   browserSync.init({
@@ -28,7 +29,7 @@ function server() {
   });
   watch('source/sass/**/*.scss', style);
   watch('source/*.html', series(html, refresh));
-};
+}
 
 function style() {
   return src('source/sass/*.scss')
@@ -41,7 +42,7 @@ function style() {
     .pipe(sourcemap.write('.'))
     .pipe(dest('build/css/'))
     .pipe(browserSync.stream());
-};
+}
 
 function image() {
   return src('source/assets/images/**/*.{png,jpg,svg}')
@@ -56,7 +57,7 @@ function image() {
       })
     ]))
     .pipe(dest('source/assets/images/'));
-};
+}
 
 function lint() {
   return src('source/sass/**/*.scss')
@@ -66,11 +67,11 @@ function lint() {
         console: true
       }]
   }))
-};
+}
 
 function clean() {
   return del('build/')
-};
+}
 
 function copy() {
   return src([
@@ -81,12 +82,12 @@ function copy() {
       base: 'source'
     })
     .pipe(dest('build/'));
-};
+}
 
 function errorHandler(error) {
   beeper();
   return true;
-};
+}
 
 function html() {
   return src('source/*.html')
@@ -94,7 +95,7 @@ function html() {
     .pipe(posthtml([include()]))
     .pipe(htmlmin())
     .pipe(dest('build/'));
-};
+}
 
 // .pipe(gzip({
 //     //   threshold: true,
@@ -105,16 +106,16 @@ function html() {
 function refresh(done) {
   browserSync.reload();
   done();
-};
+}
 
 function jsmin() {
-  return gulp.src('source/scripts/**/*.js')
+  return src('source/scripts/**/*.js')
     .pipe(plumber([errorHandler()]))
     .pipe(concat('bundle.js'))
     .pipe(terser())
-    .pipe(gulp.dest('build/scripts/'))
+    .pipe(dest('build/scripts/'))
     .pipe(browserSync.stream());
-};
+}
 
 const build = series(style, html, copy);
 const start = series(clean, build, server);
