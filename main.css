@@ -478,7 +478,7 @@ input[type="radio"].visually-hidden {
     .navigation-main__list {
       position: absolute;
       top: 150px;
-      left: 70px;
+      left: 30%;
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
@@ -490,11 +490,11 @@ input[type="radio"].visually-hidden {
               flex-direction: column; }
     .navigation-main__button {
       position: fixed;
-      top: 14px;
-      left: 20px;
+      top: 4px;
+      left: 10px;
       display: block;
-      width: 60px;
-      height: 60px;
+      width: 84px;
+      height: 84px;
       background-color: transparent;
       border: none;
       outline: none;
@@ -510,7 +510,7 @@ input[type="radio"].visually-hidden {
         background-color: #ffffff;
         border-radius: 5px;
         top: 50%;
-        left: 18px;
+        left: 30px;
         -webkit-transition: -webkit-transform 0.3s linear;
         transition: -webkit-transform 0.3s linear;
         transition: transform 0.3s linear;

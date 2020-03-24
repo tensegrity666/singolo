@@ -11,10 +11,13 @@ const showMenu = () => {
 }
 
 export const menuHandler = () => {
-  header.addEventListener('click', event => {
-    event.preventDefault();
+  header.addEventListener('touchend', event => {
     if (event.target.classList.contains('navigation-main__button') || event.target.classList.contains('navigation-main__button-inner')) {
+      event.preventDefault();
       showMenu();
     }
+  });
+  burger.addEventListener('touchmove', event => {
+    event.preventDefault();
   });
 }
