@@ -989,6 +989,7 @@ input[type="radio"].visually-hidden {
   .works {
     grid-template-rows: repeat(4, 183px);
     grid-template-columns: repeat(3, 216px);
+    justify-content: center;
     max-height: calc(203px * 4); }
     .works__item-picture {
       width: 216px;
