@@ -1543,6 +1543,20 @@ input[type="radio"].visually-hidden {
       -webkit-transition: all 0.2s linear;
       transition: all 0.2s linear; }
 
+@media (min-width: 768) and (max-width: 1019px) {
+  .modal__content {
+    top: 20vh;
+    left: 15vw;
+  }
+}
+
 @media (min-width: 320px) and (max-width: 767px) {
+  .modal__content {
+    top: 20vh;
+    left: 15vw;
+    width: 300px;
+  }
   .modal__wrapper {
-    z-index: 9; } }
+    z-index: 9;
+  }
+}
