@@ -228,7 +228,6 @@ input[type="radio"].visually-hidden {
   overflow: hidden; }
 
 :root {
-  overflow: auto;
   font-family: "Lato", sans-serif;
   font-size: 10px;
   line-height: 2;
@@ -251,8 +250,7 @@ input[type="radio"].visually-hidden {
 
 @media (min-width: 320px) and (max-width: 767px) {
   .page {
-    width: 375px;
-    overflow: hidden; } }
+    width: 375px; } }
 
 .page::-webkit-scrollbar {
   width: 15px; }
