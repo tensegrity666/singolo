@@ -1116,7 +1116,7 @@ input[type="radio"].visually-hidden {
     .team__members {
       grid-template-columns: 1fr; }
     .team__person {
-      margin-bottom: 35px; }
+      margin-bottom: 65px; }
       .team__person-photo {
         width: 314px;
         height: 314px; }
