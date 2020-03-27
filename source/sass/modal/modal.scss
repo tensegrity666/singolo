@@ -88,7 +88,19 @@
   }
 }
 
+@media (min-width: $medium-width) and (max-width: 1019px) {
+  .modal__content {
+    top: 20vh;
+    left: 15vw;
+  }
+}
+
 @media (min-width: 320px) and (max-width: 767px) {
+  .modal__content {
+    top: 20vh;
+    left: 15vw;
+    width: 300px;
+  }
   .modal__wrapper {
     z-index: $lower-z-index;
   }
