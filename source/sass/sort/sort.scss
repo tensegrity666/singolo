@@ -22,3 +22,9 @@
     }
   }
 }
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .sort__item {
+    padding: 6px;
+  }
+}

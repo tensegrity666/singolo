@@ -58,15 +58,19 @@
   }
 }
 
-@media (max-width: $medium-width) {
+@media (min-width: $medium-width) and (max-width: 1019px) {
   .navigation-main {
     &__item-link {
       font-size: 1.5rem;
     }
+
+    &__button {
+      display: none;
+    }
   }
 }
 
-@media (max-width: $narrow-width) {
+@media (min-width: 320px) and (max-width: 767px) {
   *:hover {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     -webkit-user-select: none;
@@ -76,9 +80,9 @@
   .navigation-main {
     position: absolute;
     top: $header-height;
-    left: -100%;
+    left: -200%;
     z-index: $higher-z-index;
-    width: 80vw;
+    width: $narrow-width - 70px;
     height: 100vh;
     background-color: #2d303a;
     transition: left 0.3s linear;
@@ -88,16 +92,21 @@
       line-height: 2;
     }
 
-    &__item::after {
-      content: "";
+    &__item {
+      padding: 0;
+
+      &::after {
+        content: "";
+      }
     }
 
     &__list {
       position: absolute;
       top: 150px;
-      left: 30%;
+      left: 33%;
       display: flex;
       flex-direction: column;
+      min-width: 210px;
     }
 
     &__button {
@@ -109,7 +118,6 @@
       height: $burger-outer-size;
       background-color: transparent;
       border: none;
-      border-radius: 50%;
       outline: none;
       transition: transform 0.15s ease;
 

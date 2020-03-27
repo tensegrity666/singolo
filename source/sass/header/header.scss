@@ -15,7 +15,7 @@
   }
 }
 
-@media (max-width: $medium-width) {
+@media (min-width: $medium-width) and (max-width: 1019px) {
   .header__main {
     width: $medium-width;
     transition: transform 0.5s linear;
@@ -27,13 +27,15 @@
   }
 }
 
-@media (max-width: $narrow-width) {
+@media (min-width: 320px) and (max-width: 767px) {
   .header__main {
     width: $narrow-width;
+    transition: all 0.5s linear;
+    transform: translateY(0);
   }
 
   .header__main[data-visibility="hidden"] {
-    transition: transform 0.5s linear;
+    transition: all 0.5s linear;
     transform: translateY(-100%);
   }
 }

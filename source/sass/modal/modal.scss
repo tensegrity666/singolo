@@ -88,7 +88,7 @@
   }
 }
 
-@media (max-width: $narrow-width) {
+@media (min-width: 320px) and (max-width: 767px) {
   .modal__wrapper {
     z-index: $lower-z-index;
   }

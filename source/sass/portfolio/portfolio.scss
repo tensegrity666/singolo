@@ -32,3 +32,9 @@
     font-weight: 400;
   }
 }
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .portfolio__sort {
+    justify-content: space-evenly;
+  }
+}

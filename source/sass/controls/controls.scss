@@ -32,13 +32,13 @@
   }
 }
 
-@media (max-width: $medium-width) {
+@media (min-width: $medium-width) and (max-width: 1019px) {
   .controls__list_control {
     height: $slider-height-medium;
   }
 }
 
-@media (max-width: $narrow-width) {
+@media (min-width: 320px) and (max-width: 767px) {
   .controls__list_control {
     width: 40px;
     height: $slider-height-small;

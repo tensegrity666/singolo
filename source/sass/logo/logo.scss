@@ -4,6 +4,7 @@
 
   &__item {
     list-style: none;
+    transition: all 0.3s linear;
 
     &-link {
       font-size: 2.41rem;
@@ -18,9 +19,14 @@
   }
 }
 
-@media (max-width: $narrow-width) {
+@media (min-width: 320px) and (max-width: 767px) {
   .logo {
     z-index: $top-z-index;
     margin: 0 auto;
+
+    &__item_menu {
+      margin-left: -33%;
+      transition: all 0.3s linear;
+    }
   }
 }

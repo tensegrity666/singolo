@@ -11,16 +11,16 @@
   }
 }
 
-@media (max-width: $medium-width) {
+@media (min-width: $medium-width) and (max-width: 1019px) and (max-width: 1019px) {
   .page {
     width: $medium-width;
-    margin: 0;
+    margin: 0 auto;
   }
 }
 
-@media (max-width: $narrow-width) {
+@media (min-width: 320px) and (max-width: 767px) {
   .page {
     width: $narrow-width;
-    overflow-x: hidden;
+    overflow: hidden;
   }
 }

@@ -78,7 +78,7 @@
   }
 }
 
-@media (max-width: $medium-width) {
+@media (min-width: $medium-width) and (max-width: 1019px) {
   .iphone {
     width: 162px;
     height: 344px;
@@ -114,10 +114,11 @@
   }
 }
 
-@media (max-width: $narrow-width) {
+@media (min-width: 320px) and (max-width: 767px) {
   .iphone {
     width: 80px;
     height: 170px;
+    background-size: cover;
 
     &_vertical {
       top: 22px;
