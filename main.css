@@ -1000,7 +1000,7 @@ input[type="radio"].visually-hidden {
     grid-template-rows: repeat(4, 130px);
     grid-template-columns: repeat(2, 152px);
     gap: 10px;
-    max-height: calc(140px * 4);
+    max-height: calc(140px * 4 - 10px);
     -webkit-box-pack: center;
     -webkit-justify-content: center;
         -ms-flex-pack: center;
